@@ -1,0 +1,284 @@
+  /* Google fonts link */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+
+:root {
+
+  --green-color: #008037;
+
+  --surface-1-light: #F5F5F7;
+  --surface-2-light: #E8E8E8;
+
+  --surface-1-dark: #161616;
+  --surface-2-dark: #1E1E1E;
+
+  --text-1-white: #F5F5F7;
+  --text-2-white: #E8E8E8;
+
+  --text-1-black: #161616;
+  --text-2-black: #1E1E1E;
+  
+  --font-family: 'Poppins', sans-serif;
+
+  --brand-color: var(--green-color);
+
+  --dark-hover-btn: #1E1E1E;
+  --light-hover-btn: #E8E8E8;
+  --light-text-color-hover-btn: #E8E8E8;
+  --dark-text-color-hover-btn: #1E1E1E;
+
+  --bg-1: var(--surface-1-light);
+  --bg-2: var(--surface-2-light);
+
+  --text-color-1: var(--text-1-white);
+  --text-color-2: var(--text-2-white);
+  --text-color-3: var(--text-1-black);
+  --text-color-4: var(--text-2-black);
+
+  --bg-hover-btn: var(--dark-hover-btn);
+  --text-color-hover-btn: var(--light-text-color-hover-btn);
+
+  --navbar-blured-bg: rgba(245, 245, 247, 0.7);   
+  --navbar-active-text: #1E1E1E;
+
+  --menu-border: #161616;
+
+  --gradient-about-card: rgba(22, 22, 22, 0.7);
+
+  --transition: 150ms ease-in;
+
+  /* Dark mode */
+  @media (prefers-color-scheme: dark) {
+
+    --bg-1: var(--surface-1-dark);
+    --bg-2: var(--surface-2-dark);
+
+    --text-color-3: var(--text-1-white);
+    --text-color-4: var(--text-2-white);
+
+    --bg-hover-btn: var(--light-hover-btn);
+    --text-color-hover-btn: var(--dark-text-color-hover-btn);
+
+    --navbar-blured-bg: rgba(22, 22, 22, 0.7);
+    --navbar-active-text: #E8E8E8;
+    
+    --menu-border: #F1F1F7;
+
+  }
+
+}
+
+/* Formating elements */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Smooth scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Aling body items */
+body {
+  align-items: center;
+  background-color: var(--bg-1);
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+}
+
+/* Scrollbar width */
+::-webkit-scrollbar {
+  width: 0px;
+}
+
+/* H1 */
+.h1 {
+  --font-size: 40px;
+
+  font-family: var(--font-family);
+  font-size: var(--font-size);
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-align: center;
+}
+
+/* H2 */
+.h2 {
+  --font-size: 35px;
+
+  font-family: var(--font-family);
+  font-size: var(--font-size);
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-align: center;
+}
+
+/* H3 */
+.h3 {
+  --font-size: 22px;
+
+  font-family: var(--font-family);
+  font-size: var(--font-size);
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+/* H4 */
+.h4 {
+  --font-size: 20px;
+
+  font-family: var(--font-family);
+  font-size: var(--font-size);
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+/* Paragraph */
+.p {
+  font-family: var(--font-family);
+  font-style: light;
+  font-weight: 300;
+  line-height: normal;
+}
+
+/* Class used in the containers */
+.container {
+  --gap: 80px;
+  --padding: 50px 25px;
+  --max-width: 100%;
+
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap);
+  height: auto;
+  max-width: 1200px;
+  padding: var(--padding);
+  width: 100vw;
+}
+
+/* Logo */
+.logo {
+  --width: 35px;
+
+  transition: var(--transition);
+  width: var(--width);
+}
+
+/* Button styles */
+.button {
+  --padding: 10px 35px;
+
+  background-color: var(--background, #008037);
+  border: none;
+  border-radius: 10px;
+  color: var(--color, #E8E8E8);
+  font-family: var(--font-family);
+  padding: var(--padding);
+  transition: var(--transition);
+}
+
+.button:hover, .button:active {
+  --background: var(--bg-hover-btn);
+  --color: var(--text-color-hover-btn);
+  scale: 1.06;
+}
+
+/* Remove anchor tag underline */
+.navigation-link > a {
+  text-decoration: none;
+}
+
+/* Navbar/Menu link */
+.navigation-link p {
+  --font-size: 14px;
+  --color: var(--text-color-2);
+
+  color: var(--color);
+  font-family: var(--font-family);
+  font-size: var(--font-size);
+  transition: var(--transition);
+}
+
+/* Navbar/Menu link hovered */
+.navigation-link:hover p {
+  --color: var(--brand-color) !important;
+}
+
+/* Devices above 680px wide */
+@media (680px < width) {
+
+  .h1 {
+    --font-size: 55px;
+  }
+
+  .h2 {
+    --font-size: 40px;
+  }
+
+  .h3 {
+    --font-size: 35px;
+  }
+
+  .h4 {
+    --font-size: 22px;
+  }
+
+  .container {
+    --gap: 100px;
+    --padding: 100px 25px;
+  }
+
+}
+
+/* Devices above 1000px wide */
+@media (1000px < width) {
+
+  .h1 {
+    --font-size: 65px;
+  }
+
+  .h2 {
+    --font-size: 45px;
+  }
+
+  .h3 {
+    --font-size: 30px;
+  }
+
+  .h3 {
+    --font-size: 22px;
+  }
+
+}
+
+/* Devices above 1200px wide */
+@media (1200px < width) {
+
+  .h1 {
+    --font-size: 70px;
+  }
+
+  .h2 {
+    --font-size: 45px;
+  }
+
+  .h3 {
+    --font-size: 35px;
+  }
+
+  .h3 {
+    --font-size: 22px;
+  }
+
+  .container {
+    --padding: 100px 100px;
+  }
+
+}
