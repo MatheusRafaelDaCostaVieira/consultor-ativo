@@ -42,6 +42,7 @@
 
   --menu-border: #161616;
 
+  --gradient-home-bg: rgba(22, 22, 22, 0.75);
   --gradient-about-card: rgba(22, 22, 22, 0.7);
 
   --transition: 150ms ease-in;
@@ -100,7 +101,7 @@ section {
 
 /* H1 */
 .h1 {
-  --font-size: 50px;
+  --font-size: 55px;
 
   font-family: var(--font-family);
   font-size: var(--font-size);
@@ -178,6 +179,7 @@ section {
 
 /* Button styles */
 .button {
+  --font-size: 16px;
   --padding: 10px 35px;
 
   background-color: var(--background, #008037);
@@ -185,6 +187,8 @@ section {
   border-radius: 10px;
   color: var(--color, #E8E8E8);
   font-family: var(--font-family);
+  font-size: var(--font-size);
+  font-weight: 300;
   padding: var(--padding);
   transition: var(--transition);
 }
@@ -214,12 +218,6 @@ section {
 /* Navbar/Menu link hovered */
 .navigation-link:hover p {
   --color: var(--brand-color) !important;
-}
-
-@media (500px < width) {
-  .h1 {
-    --font-size: 55px;
-  }
 }
 
 /* Devices above 680px wide */
