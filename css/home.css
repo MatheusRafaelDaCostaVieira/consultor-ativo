@@ -1,0 +1,175 @@
+#home {
+    background-image: url(../images/backgrounds/home_background.webp);
+    background-position: center;  
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    max-height: 900px;
+    min-height: 600px;
+    min-width: 100vw;
+}
+
+/* Navbar properties */
+.navbar {
+    --background: transparent;
+    --blur: 0;
+    --padding: 0 25px;
+
+    backdrop-filter: blur(var(--blur));
+    background-color: var(--background);
+    display: flex;
+    justify-content: center;
+    left: 0;
+    padding: var(--padding);
+    position: fixed;
+    top: 0;
+    transition: var(--transition);
+    width: 100vw;
+    z-index: 1000;
+}
+
+/* Active navbar */
+.active-navbar {
+    --background: var(--navbar-blured-bg);
+    --blur: 25px;
+
+    /* Logo size */
+    .logo {
+        --width: 25px;
+    }
+
+    /* Navbar height */
+    .navbar-content {
+        --height: 50px;
+    }
+
+    /* Navigation links color */
+    .navigation-link p {
+        --color: var(--navbar-active-text);
+    }
+
+    /* Menu bars color */
+    .menu-bar {
+        --bg-color: var(--text-color-4);
+    }
+}
+
+/* This stop the navbar content from stretch itself to more than 1920px */
+.navbar-content {
+    --height: 80px;
+
+    align-items: center;
+    display: flex;
+    height: var(--height);
+    justify-content: space-between;
+    max-width: 1200px;
+    transition: var(--transition);
+    width: 100%;
+}
+
+.header {
+    --gap: 30px;
+
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap);
+    height: 100%;
+    justify-content: center;
+}
+
+/* Hamburguer menu button */
+.menu-button {
+    background-color: transparent;
+    border: none;
+}
+
+/* Menu bars div */
+.menu-icon {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+/* Hamburguer menu bars */
+.menu-bar {
+    --bg-color: var(--text-color-2);
+
+     background-color: var(--bg-color);
+     border-radius: 5px;
+     width: 30px;
+     height: 1.5px;
+} 
+
+/* Centering items */
+.home-items {
+    text-align: center;
+}
+
+/* H1 white color */
+.home-h1 {
+    color: var(--text-color-1);
+}
+
+/* Green word */
+.home-h1 > span {
+    color: var(--brand-color);
+}
+
+/* Paragraph color and size */
+.home-p {
+    color: var(--text-color-2);
+    font-size: 13px;
+}
+
+.home-button:hover, .home-button:active {
+  --background: var(--light-hover-btn);
+  --color: var(--dark-text-color-hover-btn);
+}
+
+/* Navbar ul */
+.navbar-links {
+    display: none;
+    gap: 32px;
+    list-style: none;
+}
+
+/* Devices above 680px wide */
+@media (680px < width) {
+
+    /* Make the home section stop at 700px height */
+    #home {
+        max-height: 650px;
+    }
+    
+}
+
+/* Devices above 900px wide */
+@media (900px < width) {
+
+
+    /* Hide menu button */
+    .menu-button {
+        display: none;
+    }
+
+    /* Show navbar links */
+    .navbar-links {
+        display: flex;
+    }
+
+}
+
+/* Devices above 1000px wide */
+@media (1000px < width) {
+
+}
+
+/* Devices above 1200px wide */
+@media (1200px < width) {
+
+    .navbar {
+        --padding: 0 100px;
+    }
+
+}
