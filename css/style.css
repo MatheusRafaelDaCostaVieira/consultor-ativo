@@ -93,15 +93,20 @@ body {
   width: 0px;
 }
 
+section {
+  max-width: 2560px;
+  overflow: hidden;
+}
+
 /* H1 */
 .h1 {
-  --font-size: 40px;
+  --font-size: 50px;
 
   font-family: var(--font-family);
   font-size: var(--font-size);
   font-style: normal;
   font-weight: 400;
-  line-height: normal;
+  line-height: 1.3;
   text-align: center;
 }
 
@@ -165,7 +170,7 @@ body {
 
 /* Logo */
 .logo {
-  --width: 35px;
+  --width: 40px;
 
   transition: var(--transition);
   width: var(--width);
@@ -197,7 +202,7 @@ body {
 
 /* Navbar/Menu link */
 .navigation-link p {
-  --font-size: 14px;
+  --font-size: 16px;
   --color: var(--text-color-2);
 
   color: var(--color);
@@ -211,15 +216,21 @@ body {
   --color: var(--brand-color) !important;
 }
 
+@media (500px < width) {
+  .h1 {
+    --font-size: 55px;
+  }
+}
+
 /* Devices above 680px wide */
 @media (680px < width) {
 
   .h1 {
-    --font-size: 55px;
+    --font-size: 70px;
   }
 
   .h2 {
-    --font-size: 40px;
+    --font-size: 45px;
   }
 
   .h3 {
@@ -240,14 +251,6 @@ body {
 /* Devices above 1000px wide */
 @media (1000px < width) {
 
-  .h1 {
-    --font-size: 65px;
-  }
-
-  .h2 {
-    --font-size: 45px;
-  }
-
   .h3 {
     --font-size: 30px;
   }
@@ -260,14 +263,6 @@ body {
 
 /* Devices above 1200px wide */
 @media (1200px < width) {
-
-  .h1 {
-    --font-size: 70px;
-  }
-
-  .h2 {
-    --font-size: 45px;
-  }
 
   .h3 {
     --font-size: 35px;
