@@ -1,12 +1,15 @@
 #home {
-    background-image: url(../images/backgrounds/home_background.webp);
+    --padding: 0 25px;
+
+    background-image: linear-gradient(var(--gradient-home-bg), var(--gradient-home-bg)), url("../images/backgrounds/home_background.webp");;
     background-position: center;  
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100vh;
+    height: 70vh;
     max-height: 900px;
     min-height: 600px;
-    min-width: 100vw;
+    padding: var(--padding);
+    width: 100%;
 }
 
 /* Navbar properties */
@@ -33,14 +36,9 @@
     --background: var(--navbar-blured-bg);
     --blur: 25px;
 
-    /* Logo size */
-    .logo {
-        --width: 25px;
-    }
-
     /* Navbar height */
     .navbar-content {
-        --height: 50px;
+        --height: 70px;
     }
 
     /* Navigation links color */
@@ -68,7 +66,7 @@
 }
 
 .header {
-    --gap: 30px;
+    --gap: 50px;
 
     align-items: center;
     display: flex;
@@ -97,8 +95,8 @@
 
      background-color: var(--bg-color);
      border-radius: 5px;
-     width: 30px;
-     height: 1.5px;
+     width: 40px;
+     height: 4px;
 } 
 
 /* Centering items */
@@ -109,6 +107,7 @@
 /* H1 white color */
 .home-h1 {
     color: var(--text-color-1);
+    margin-bottom: 20px;
 }
 
 /* Green word */
@@ -119,7 +118,7 @@
 /* Paragraph color and size */
 .home-p {
     color: var(--text-color-2);
-    font-size: 13px;
+    font-size: 16px;
 }
 
 .home-button:hover, .home-button:active {
@@ -134,11 +133,25 @@
     list-style: none;
 }
 
+/* Devices above 467px wide */
+@media(467px < width) {
+
+    .header {
+        --gap: 40px;
+    }
+
+    .home-h1 {
+        margin-bottom: 10px;
+    }
+    
+}
+
 /* Devices above 680px wide */
 @media (680px < width) {
 
     /* Make the home section stop at 700px height */
     #home {
+        height: 100vh;
         max-height: 650px;
     }
     
@@ -162,7 +175,23 @@
 
 /* Devices above 1000px wide */
 @media (1000px < width) {
+    
+    .logo {
+        --width: 35px;
+    }
 
+    /* Active navbar */
+    .active-navbar {
+
+        /* Navbar height */
+        .navbar-content {
+            --height: 55px;
+        }
+
+        .logo {
+            --width: 30px;
+        }
+    }
 }
 
 /* Devices above 1200px wide */
