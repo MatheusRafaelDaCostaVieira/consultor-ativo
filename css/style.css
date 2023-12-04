@@ -157,14 +157,13 @@ section {
 .container {
   --gap: 80px;
   --padding: 50px 25px;
-  --max-width: 100%;
 
   align-items: center;
   display: flex;
   flex-direction: column;
   gap: var(--gap);
   height: auto;
-  max-width: 1200px;
+  max-width: 1300px;
   padding: var(--padding);
   width: 100vw;
 }
