@@ -5,25 +5,29 @@
     flex-wrap: wrap;
     gap: 30px;
     justify-content: center;
-    max-width: 1000px;
 }
 
 
 /* Div that builds the card and has the background image */
 .about-card {
+    --heigth: 225px;
+    --max-width: 400px;
+    --width: 100%;
+
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 10px;
-    height: 100%;
-    max-height: 200px;
-    min-height: 200px;
-    max-width: 310px;
+
+    height: var(--heigth);
+    max-width: var(--max-width);
     min-width: 200px;
+
+
     overflow: hidden;
     position: relative;
     transition: var(--transition);
-    width: 100%;
+    width: var(--width);
 }
 
 .about-card-1 {
@@ -106,9 +110,9 @@
 
 /* About card paragraph */
 .about-card .p {
-    --font-size: 13px;
+    --font-size: 15px;
 
-    color:var(--text-color-2);
+    color: var(--text-color-2);
     font-size: var(--font-size);
 }
 
@@ -117,10 +121,44 @@
     visibility: 0;
 }
 
-@media (1000px < width) {
+/* Devices above 467px wide */
+@media(467px < width) {
 
-    .about-card .p {
-        --font-size: 14px;
+}
+
+/* Devices above or equal to 680px wide */
+@media (680px <= width) {
+
+    .about-card {
+        --max-width: 100%;
+        --width: 300px;
     }
-    
+
+}
+
+/* Devices above 800px wide */
+@media (800px < width) {
+
+    .about-card {
+        --width: 325px;
+    }
+
+}
+
+/* Devices above 950px wide */
+@media (950px < width) {
+
+    .about-card {
+        --height: 210px;
+    }
+
+}
+
+/* Devices above 950px wide */
+@media (1200px < width) {
+
+    .about-card {
+        --width: 360px;
+    }
+
 }

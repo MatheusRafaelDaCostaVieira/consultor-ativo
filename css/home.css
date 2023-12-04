@@ -147,11 +147,6 @@
     }
 }
 
-/* Devices above 467px wide */
-@media(467px < width) {
-
-}
-
 /* Devices above 680px wide */
 @media (680px < width) {
 

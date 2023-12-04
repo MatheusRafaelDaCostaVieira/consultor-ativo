@@ -270,7 +270,7 @@ section {
   }
 
   .container {
-    --padding: 100px 100px;
+    --padding: 100px 25px;
   }
 
 }
