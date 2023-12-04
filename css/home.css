@@ -66,7 +66,7 @@
 }
 
 .header {
-    --gap: 50px;
+    --gap: 0px;
 
     align-items: center;
     display: flex;
@@ -74,6 +74,7 @@
     gap: var(--gap);
     height: 100%;
     justify-content: center;
+    text-align: center;
 }
 
 /* Hamburguer menu button */
@@ -99,15 +100,9 @@
      height: 4px;
 } 
 
-/* Centering items */
-.home-items {
-    text-align: center;
-}
-
 /* H1 white color */
 .home-h1 {
     color: var(--text-color-1);
-    margin-bottom: 20px;
 }
 
 /* Green word */
@@ -117,8 +112,12 @@
 
 /* Paragraph color and size */
 .home-p {
+    --font-size: 16px;
+    --margin-bottom: 50px;
+
     color: var(--text-color-2);
     font-size: 16px;
+    margin-bottom: var(--margin-bottom);
 }
 
 .home-button:hover, .home-button:active {
@@ -133,17 +132,24 @@
     list-style: none;
 }
 
+/* Devices under 350px wide */
+@media(width < 350px) {
+    .h1 {
+        --font-size: 45px;
+    }
+
+    .button {
+        --font-size: 14px;
+    }
+
+    .home-p {
+        --font-size: 14px;
+    }
+}
+
 /* Devices above 467px wide */
 @media(467px < width) {
 
-    .header {
-        --gap: 40px;
-    }
-
-    .home-h1 {
-        margin-bottom: 10px;
-    }
-    
 }
 
 /* Devices above 680px wide */
@@ -153,6 +159,14 @@
     #home {
         height: 100vh;
         max-height: 650px;
+    }
+
+    .header {
+        --gap: 15px;
+    }
+
+    .home-p {
+        --margin-bottom: 15px;
     }
     
 }
@@ -182,8 +196,7 @@
 
     /* Active navbar */
     .active-navbar {
-
-        /* Navbar height */
+        
         .navbar-content {
             --height: 55px;
         }
