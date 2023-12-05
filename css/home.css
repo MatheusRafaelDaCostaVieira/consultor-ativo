@@ -28,7 +28,7 @@
     top: 0;
     transition: var(--transition);
     width: 100vw;
-    z-index: 1000;
+    z-index: 100;
 }
 
 /* Active navbar */
@@ -36,7 +36,6 @@
     --background: var(--navbar-blured-bg);
     --blur: 25px;
 
-    /* Navbar height */
     .navbar-content {
         --height: 70px;
     }
@@ -50,6 +49,7 @@
     .menu-bar {
         --bg-color: var(--text-color-4);
     }
+
 }
 
 /* This stop the navbar content from stretch itself to more than 1920px */
@@ -132,6 +132,15 @@
     list-style: none;
 }
 
+/* When menu gets open, navbar change it's styles */
+.active-menu-navbar {
+    --background: var(--bg-1);
+
+    .menu-bar {
+        --bg-color: var(--text-color-4);
+    }
+}
+
 /* Devices under 350px wide */
 @media(width < 350px) {
     .h1 {
@@ -178,6 +187,14 @@
     /* Show navbar links */
     .navbar-links {
         display: flex;
+    }
+
+    .active-menu-navbar {
+        --background: var(--navbar-blured-bg);
+    
+        .menu-bar {
+            --bg-color: var(--text-color-4);
+        }
     }
 
 }
