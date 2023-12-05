@@ -73,6 +73,8 @@
 /* This class is added when the user click in the card */
 .about-card-hover {
 
+    scale: 1.05;
+    
     .about-card-title {
         opacity: 0;
         visibility: 0;
