@@ -40,8 +40,6 @@
   --navbar-blured-bg: rgba(245, 245, 247, 0.7);   
   --navbar-active-text: #1E1E1E;
 
-  --menu-border: #161616;
-
   --gradient-home-bg: rgba(22, 22, 22, 0.75);
   --gradient-about-card: rgba(22, 22, 22, 0.7);
 
@@ -61,8 +59,6 @@
 
     --navbar-blured-bg: rgba(22, 22, 22, 0.7);
     --navbar-active-text: #E8E8E8;
-    
-    --menu-border: #F1F1F7;
 
   }
 
@@ -87,6 +83,11 @@ body {
   display: flex;
   flex-direction: column;
   overflow-x: hidden;
+}
+
+.block-scroll {
+  height: 100%;
+  overflow: hidden;
 }
 
 /* Scrollbar width */
@@ -115,6 +116,7 @@ section {
 .h2 {
   --font-size: 35px;
 
+  color: var(--text-color-3);
   font-family: var(--font-family);
   font-size: var(--font-size);
   font-style: normal;
