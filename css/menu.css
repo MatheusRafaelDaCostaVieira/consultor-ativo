@@ -1,60 +1,55 @@
 #menu {
-    align-items: center;
-    display: none;
+    --left: -100%;
+
+    bottom: 0;
+    height: 1;
+    left: var(--left);
     justify-content: center;
     position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 1;
+    transition: var(--transition);
+    z-index: 1000;
+}
+
+/* Class that shows the menu */
+#menu.active-menu {
+    --left: 0;
 }
 
 /* Div that contains the menu ul */
 .menu-container {
-    align-items: center;
     background-color: var(--bg-1);
-    border: 1px solid var(--menu-border);
-    border-radius: 10px;
-    display: flex;
-    height: 380px;
-    justify-content: center;
-    width: 250px;
+    height: calc(100vh - 80px);
+    max-width: 500px;
+    padding: 100px 25px 0;
+    width: 100vw;
+}
+
+/* Menu heigth increases when navbar is active */
+.active-navbar-menu {
+    height: calc(100vh - 70px);
 }
 
 /* The ul that contains the navbar navigation links */
 .menu-links {
-    align-items: center;
     display: flex;
     flex-direction: column;
     gap: 32px;
     list-style: none;
-    justify-content: center;
+    text-align: left;
 }
 
-/* Setting up the color of the navbar navigation links */
+/* Menu links color and size */
 .menu-links .navigation-link p {
+  --font-size: 24px;
+
     color: var(--text-color-4);
 }
 
-/* Devices above 680px wide */
-@media (680px < width) {
-
-    /* Making the menu link bigger for tablets */
-    .menu-links .navigation-link p {
-        font-size: 16px;
-    }
-
-    .menu-container {
-        height: 400px;
-        width: 280px;
-    }
-
-}
-
-@media (680px < width) {
+@media (900px < width) {
 
     /* Hidding the menu button */
     #menu {
         display: none;
     }
+
 }
