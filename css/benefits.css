@@ -1,0 +1,105 @@
+/* Div that contains all the benefits cards */
+.benefits-row {
+    --gap: 50px;
+
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap);
+    justify-content: center;
+}
+
+/* Image, title and paragraph container */
+.benefits-card {
+    --flex-direction: column;
+    --text-aling: center;
+    --width: 100%;
+
+    align-items: center;
+    display: flex;
+    flex-direction: var(--flex-direction);
+    justify-content: center;
+    max-width: 1100px;
+    text-align: var(--text-aling);
+    width: var(--width);
+}
+
+/* Space between image and text */
+.benefit-card-items-space {
+    flex: 1 0 30px;
+}
+
+/* Benefit card image */
+.benefit-image {
+    --height: 230px;
+    --width: 230px;
+
+    height: var(--height);
+    object-fit: cover;
+    width: var(--width);
+}
+
+/* Max width for the text grow */
+.benefit-text {
+    max-width: 600px;
+}
+
+/* Margin under h3 */
+.benefit-h3 {
+    margin-bottom: var(--h3-bottom-margin);
+}
+
+/* Paragraph font-size */
+.benefit-p {
+    font-size: 16px;
+}
+
+
+/* Devices above 680px wide */
+@media (680px < width) {
+
+    .benefits-row {
+        --gap: 80px;
+    }
+
+}
+
+/* Devices above 900px wide */
+@media (900px < width) {
+
+    /* Make card content sit alongside others */
+    .benefits-card {
+        --flex-direction: row;
+        --text-aling: left;
+        --width: 80vw;
+    }
+
+    /* Invert image position of even cards */
+    .benefits-card:nth-of-type(even) {
+        .benefit-image {
+            order: 2;
+        }
+    
+        .benefit-card-items-space {
+            order: 1;
+        }
+    }
+
+    /* Changing image size */
+    .benefit-image {
+        --height: 280px;
+        --width: 280px;
+    }
+ 
+}
+
+/* Devices above 1200px wide */
+@media (1200px < width) {
+
+    /* Changing image size */
+    .benefit-image {
+        --height: 350px;
+        --width: 350px;
+    }
+ 
+}
