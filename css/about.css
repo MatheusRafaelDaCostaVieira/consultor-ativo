@@ -10,7 +10,7 @@
 
 /* Div that builds the card and has the background image */
 .about-card {
-    --heigth: 225px;
+    --height: 225px;
     --max-width: 400px;
     --width: 100%;
 
@@ -19,7 +19,7 @@
     background-size: cover;
     border-radius: 10px;
 
-    height: var(--heigth);
+    height: var(--height);
     max-width: var(--max-width);
     min-width: 200px;
 
@@ -161,6 +161,15 @@
 
     .about-card {
         --width: 360px;
+    }
+
+}
+/* Devices above 950px wide */
+@media (1400px < width) {
+
+    .about-card {
+        --height: 250px;
+        --width: 400px;
     }
 
 }
