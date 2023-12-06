@@ -7,7 +7,7 @@
     justify-content: center;
     position: fixed;
     transition: var(--transition);
-    z-index: 1000;
+    z-index: 100;
 }
 
 /* Class that shows the menu */
@@ -18,15 +18,10 @@
 /* Div that contains the menu ul */
 .menu-container {
     background-color: var(--bg-1);
-    height: calc(100vh - 80px);
+    height: 100vh;
     max-width: 500px;
-    padding: 100px 25px 0;
+    padding: 170px 25px 0;
     width: 100vw;
-}
-
-/* Menu heigth increases when navbar is active */
-.active-navbar-menu {
-    height: calc(100vh - 70px);
 }
 
 /* The ul that contains the navbar navigation links */
