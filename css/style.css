@@ -37,7 +37,7 @@
   --bg-hover-btn: var(--dark-hover-btn);
   --text-color-hover-btn: var(--light-text-color-hover-btn);
 
-  --navbar-blured-bg: rgba(245, 245, 247, 0.7);   
+  --navbar-blured-bg: rgba(245, 245, 247, 0.8);   
   --navbar-active-text: #1E1E1E;
 
   --gradient-home-bg: rgba(22, 22, 22, 0.75);
@@ -57,7 +57,7 @@
     --bg-hover-btn: var(--light-hover-btn);
     --text-color-hover-btn: var(--dark-text-color-hover-btn);
 
-    --navbar-blured-bg: rgba(22, 22, 22, 0.7);
+    --navbar-blured-bg: rgba(22, 22, 22, 0.8);
     --navbar-active-text: #E8E8E8;
 
   }
@@ -158,7 +158,7 @@ section {
 /* Class used in the containers */
 .container {
   --gap: 80px;
-  --padding: 50px 25px;
+  --padding: 50px 5px;
 
   align-items: center;
   display: flex;
@@ -206,7 +206,7 @@ section {
 }
 
 /* Navbar/Menu link */
-.navigation-link p {
+.navigation-link .p {
   --font-size: 16px;
   --color: var(--text-color-2);
 
@@ -217,7 +217,8 @@ section {
 }
 
 /* Navbar/Menu link hovered */
-.navigation-link:hover p {
+.navigation-link .p:hover, 
+.navigation-link .p:active {
   --color: var(--brand-color) !important;
 }
 
@@ -242,7 +243,7 @@ section {
 
   .container {
     --gap: 100px;
-    --padding: 100px 25px;
+    --padding: 100px 5px;
   }
 
 }
@@ -269,10 +270,6 @@ section {
 
   .h3 {
     --font-size: 22px;
-  }
-
-  .container {
-    --padding: 100px 25px;
   }
 
 }
