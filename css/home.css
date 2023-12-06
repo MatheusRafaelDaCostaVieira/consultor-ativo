@@ -1,6 +1,4 @@
 #home {
-    --padding: 0 25px;
-
     background-image: linear-gradient(var(--gradient-home-bg), var(--gradient-home-bg)), url("../images/backgrounds/home_background.webp");;
     background-position: center;  
     background-repeat: no-repeat;
@@ -8,7 +6,7 @@
     height: 70vh;
     max-height: 900px;
     min-height: 600px;
-    padding: var(--padding);
+    padding: 0 5px;
     width: 100%;
 }
 
@@ -16,7 +14,7 @@
 .navbar {
     --background: transparent;
     --blur: 0;
-    --padding: 0 25px;
+    --padding: 0 15px 0 25px;
 
     backdrop-filter: blur(var(--blur));
     background-color: var(--background);
@@ -28,13 +26,13 @@
     top: 0;
     transition: var(--transition);
     width: 100vw;
-    z-index: 100;
+    z-index: 1000;
 }
 
 /* Active navbar */
 .active-navbar {
     --background: var(--navbar-blured-bg);
-    --blur: 25px;
+    --blur: 20px;
 
     .navbar-content {
         --height: 70px;
@@ -79,8 +77,13 @@
 
 /* Hamburguer menu button */
 .menu-button {
-    background-color: transparent;
+    --background: transparent;
+
+    background-color: var(--background);
     border: none;
+    border-radius: 10px;
+    padding: 15px;
+    transition: var(--transition);
 }
 
 /* Menu bars div */
@@ -134,7 +137,12 @@
 
 /* When menu gets open, navbar change it's styles */
 .active-menu-navbar {
-    --background: var(--bg-1);
+    --background: transparent;
+    --blur: none;
+
+    .menu-button {
+        --background: var(--bg-1);
+    }
 
     .menu-bar {
         --bg-color: var(--text-color-4);
@@ -163,6 +171,10 @@
     #home {
         height: 100vh;
         max-height: 650px;
+    }
+
+    .navbar {
+        --padding: 0 25px;
     }
 
     .header {
@@ -210,20 +222,11 @@
     .active-navbar {
         
         .navbar-content {
-            --height: 55px;
+            --height: 45px;
         }
 
         .logo {
             --width: 30px;
         }
     }
-}
-
-/* Devices above 1200px wide */
-@media (1200px < width) {
-
-    .navbar {
-        --padding: 0 100px;
-    }
-
 }
