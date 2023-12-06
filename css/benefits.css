@@ -54,16 +54,6 @@
     font-size: 16px;
 }
 
-
-/* Devices above 680px wide */
-@media (680px < width) {
-
-    .benefits-row {
-        --gap: 80px;
-    }
-
-}
-
 /* Devices above 900px wide */
 @media (900px < width) {
 
