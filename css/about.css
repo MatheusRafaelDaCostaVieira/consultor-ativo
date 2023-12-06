@@ -5,6 +5,7 @@
     flex-wrap: wrap;
     gap: 30px;
     justify-content: center;
+    padding: 0 10px;
 }
 
 
@@ -55,23 +56,7 @@
 }
 
 /* When about card gets hovered*/
-.about-card:hover {
-
-    scale: 1.05;
-    
-    .about-card-title {
-        opacity: 0;
-        visibility: 0;
-    }
-
-    .about-card-paragraph {
-        opacity: 1;
-        visibility: 1;
-    }
-}
-
-/* This class is added when the user click in the card */
-.about-card-hover {
+.about-card:hover, .about-card-hover {
 
     scale: 1.05;
     
