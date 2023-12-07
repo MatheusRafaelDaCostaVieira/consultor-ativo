@@ -1,3 +1,9 @@
+#about {
+    --padding-top: 100px;
+
+    padding-top: var(--padding-top);
+}
+
 /* About cards container */
 .about-cards-row {
     align-content: center;
@@ -91,7 +97,7 @@
 }
 
 /* About card title */
-.about-card .h4 {
+.about-card .h5 {
     color: var(--text-color-1);
 }
 
@@ -119,6 +125,10 @@
     .about-card {
         --max-width: 100%;
         --width: 300px;
+    }
+
+    #about {
+        --padding-top: 50px;
     }
 
 }
