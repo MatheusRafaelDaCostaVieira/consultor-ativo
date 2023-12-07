@@ -46,11 +46,13 @@
 
 /* Margin under h3 */
 .benefit-h3 {
+    color: var(--text-color-3);
     margin-bottom: var(--h3-bottom-margin);
 }
 
 /* Paragraph font-size */
 .benefit-p {
+    color: var(--text-color-4);
     font-size: 16px;
 }
 
