@@ -138,8 +138,20 @@ section {
   line-height: normal;
 }
 
-/* H4 */
+/* h4 */
 .h4 {
+  --font-size: 30px;
+
+  font-family: var(--font-family);
+  font-size: var(--font-size);
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+
+/* h5 */
+.h5 {
   --font-size: 20px;
 
   font-family: var(--font-family);
@@ -159,7 +171,7 @@ section {
 
 /* Class used in the containers */
 .container {
-  --gap: 80px;
+  --gap: 100px;
   --padding: 50px 15px;
 
   align-items: center;
@@ -239,19 +251,22 @@ section {
     --font-size: 30px;
   }
 
-  .h4 {
+  .h5 {
     --font-size: 22px;
   }
 
   .container {
-    --gap: 100px;
-    --padding: 100px 5px;
+    --padding: 100px 5px 50px;
   }
 
 }
 
 /* Devices above 1000px wide */
 @media (1000px < width) {
+  
+  .h4 {
+    --font-size: 35px;
+    }
 
 }
 
