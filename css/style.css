@@ -37,7 +37,7 @@
   --h3-bottom-margin: 10px;
 
   --box-shadow-color: rgba(30, 30, 30, 0.3);
-  --box-shadow: 5px 3px 10px 0px var(--box-shadow-color);
+  --box-shadow: 5px 3px 5px 0px var(--box-shadow-color);
 
   --bg-hover-btn: var(--dark-hover-btn);
   --text-color-hover-btn: var(--light-text-color-hover-btn);
