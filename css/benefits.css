@@ -24,6 +24,12 @@
     width: var(--width);
 }
 
+.benefits-card:hover {
+    .benefit-h3 {
+        --color: var(--green-color);
+    }
+}
+
 /* Space between image and text */
 .benefit-card-items-space {
     flex: 1 0 30px;
@@ -46,8 +52,11 @@
 
 /* Margin under h3 */
 .benefit-h3 {
-    color: var(--text-color-3);
+    --color: var(--text-color-3);
+
+    color: var(--color);
     margin-bottom: var(--h3-bottom-margin);
+    transition: var(--transition);
 }
 
 /* Paragraph font-size */
