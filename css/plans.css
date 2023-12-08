@@ -1,13 +1,12 @@
 .plans-row {
+    --gap: 30px;
     --justify-content: center;
-    --row-gap: 30px;
 
     justify-content: var(--justify-content);
     display: flex;
     flex-wrap: wrap;
-    row-gap: var(--row-gap);
-    column-gap: 10px;
-    max-width: 1100px;
+    gap: var(--gap);
+    max-width: 1200px;
     width: 100%;
 }
 
@@ -153,9 +152,11 @@
 
 /* Devices over 599px wide */
 @media (599px < width) {
+
     .plans-row {
-        --row-gap: 10px;
+        --gap: 10px;
     }
+
 }
 
 /* Devices over 869px wide */
@@ -168,7 +169,7 @@
 }
 
 /* Devices over 869px wide */
-@media (1010px < width) {
+@media (1009px < width) {
 
     .plans-row {
         --justify-content: space-between;
