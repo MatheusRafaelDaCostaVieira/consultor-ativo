@@ -77,7 +77,24 @@ $(document).ready(function() {
         
 
     }) 
+
+    window.matchMedia('(prefers-color-scheme: dark)').addEventListener("change", changeIconsColor)
+    
 })
+
+/* Change the icon according to the user's theme */
+function changeIconsColor() {
+    const userTheme = window.matchMedia('(prefers-color-scheme: dark)');
+
+    if (userTheme.matches) {
+        $(".plan-p .responsive-icon").attr("src", "./images/icons/light-check.svg")
+        $(".plan-button-responsive-icon img").attr("src", "./images/icons/light-plan-btn.svg")
+    } else {
+        $(".plan-p .responsive-icon").attr("src", "./images/icons/dark-check.svg")
+        $(".plan-button-responsive-icon img").attr("src", "./images/icons/dark-plan-btn.svg")
+    }
+
+}
 
 function toggleMenu() {
     $("body").toggleClass("block-scroll")
@@ -98,3 +115,5 @@ function closeMenu() {
     $("#menu").removeClass("active-menu")
     $(".navbar").removeClass("active-menu-navbar")
 }
+
+changeIconsColor() 
