@@ -1,10 +1,12 @@
 .plans-row {
     --justify-content: center;
+    --row-gap: 30px;
 
     justify-content: var(--justify-content);
     display: flex;
     flex-wrap: wrap;
-    gap: 10px;
+    row-gap: var(--row-gap);
+    column-gap: 10px;
     max-width: 1100px;
     width: 100%;
 }
@@ -151,6 +153,13 @@
 
 
 
+
+/* Devices over 599px wide */
+@media (599px < width) {
+    .plans-row {
+        --row-gap: 10px;
+    }
+}
 
 /* Devices over 869px wide */
 @media (680px < width) {
