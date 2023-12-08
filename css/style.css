@@ -36,6 +36,9 @@
 
   --h3-bottom-margin: 10px;
 
+  --box-shadow-color: rgba(30, 30, 30, 0.20);
+  --box-shadow: 1px 1px 5px 0px var(--box-shadow-color);
+
   --bg-hover-btn: var(--dark-hover-btn);
   --text-color-hover-btn: var(--light-text-color-hover-btn);
 
@@ -44,6 +47,11 @@
 
   --gradient-home-bg: rgba(22, 22, 22, 0.75);
   --gradient-about-card: rgba(22, 22, 22, 0.7);
+
+  --plan-card-border: rgba(30, 30, 30, 0.3);
+  --plan-card-white-border: rgba(232, 232, 232, 0.3);
+  --plan-card-inside-border: rgba(30, 30, 30, 0.3);
+  --plan-card-green-bg: var(--green-color);
 
   --transition: 150ms ease-in;
 
@@ -56,11 +64,16 @@
     --text-color-3: var(--text-1-white);
     --text-color-4: var(--text-2-white);
 
+    --box-shadow-color: rgba(232, 232, 232, 0.3);
+
     --bg-hover-btn: var(--light-hover-btn);
     --text-color-hover-btn: var(--dark-text-color-hover-btn);
 
     --navbar-blured-bg: rgba(22, 22, 22, 0.8);
     --navbar-active-text: #E8E8E8;
+    
+    --plan-card-border: rgba(232, 232, 232, 0.3);
+    --plan-card-inside-border: rgba(232, 232, 232, 0.3);
 
   }
 
@@ -256,7 +269,7 @@ section {
   }
 
   .container {
-    --padding: 100px 5px 50px;
+    --padding: 100px 15px 50px;
   }
 
 }
