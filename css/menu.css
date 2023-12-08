@@ -35,7 +35,7 @@
 
 /* Menu links color and size */
 .menu-links .navigation-link p {
-  --font-size: 24px;
+    --font-size: 24px;
 
     color: var(--text-color-4);
 }

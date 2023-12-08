@@ -59,10 +59,11 @@
 }
 
 /* When about card gets hovered*/
-.about-card:hover, .about-card-hover {
+.about-card:hover,
+.about-card-hover {
 
     scale: 1.05;
-    
+
     .about-card-title {
         opacity: 0;
         visibility: 0;
@@ -112,12 +113,10 @@
 }
 
 /* Devices above 467px wide */
-@media(467px < width) {
-
-}
+@media(467px < width) {}
 
 /* Devices above or equal to 680px wide */
-@media (680px <= width) {
+@media (680px <=width) {
 
     .about-card {
         --max-width: 100%;
@@ -152,6 +151,7 @@
     }
 
 }
+
 /* Devices above 950px wide */
 @media (1400px < width) {
 

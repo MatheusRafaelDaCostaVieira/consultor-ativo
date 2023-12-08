@@ -70,7 +70,7 @@
 
     .benefits-row {
         --gap: 50px;
-    }    
+    }
 
     /* Make card content sit alongside others */
     .benefits-card {
@@ -84,7 +84,7 @@
         .benefit-image {
             order: 2;
         }
-    
+
         .benefit-card-items-space {
             order: 1;
         }
@@ -95,7 +95,7 @@
         --height: 280px;
         --width: 280px;
     }
- 
+
 }
 
 /* Devices above 1200px wide */
@@ -106,5 +106,5 @@
         --height: 350px;
         --width: 350px;
     }
- 
+
 }

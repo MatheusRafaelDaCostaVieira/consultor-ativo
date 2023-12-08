@@ -1,24 +1,24 @@
-$(document).ready(function() {
+$(document).ready(function () {
     /* And when the menu link get clicked */
-    $(".menu-links .navigation-link").on("click", function() {   
+    $(".menu-links .navigation-link").on("click", function () {
         closeMenu()
     })
 
     /* Hides the menu if the screen is bigger than 900px wide */
-    $(window).on("resize", function() {
-        
-        if(screen.width > 900) {      
+    $(window).on("resize", function () {
+
+        if (screen.width > 900) {
             closeMenu()
         }
 
     })
 
     /* Actives when user scrolls */
-    $(document).on("scroll", function() {
+    $(document).on("scroll", function () {
 
         /* If scroolTop is over 0, add active-navbar and active-navbar-menu classes. */
-        if($(document).scrollTop() > 0 || $("body").scrollTop() > 0) {
-            
+        if ($(document).scrollTop() > 0 || $("body").scrollTop() > 0) {
+
             $(".navbar").addClass("active-navbar")
             $(".menu-container").addClass("active-navbar-menu")
 
@@ -31,13 +31,13 @@ $(document).ready(function() {
     })
 
     /* Calls the function that adds the hover class when the user hovers and/or clicks on the card */
-    $(".about-card").on("click", function(event) {
-        
+    $(".about-card").on("click", function (event) {
+
         /* Gets the card that was clicked */
         clickedAboutCard = event.currentTarget
 
         /* Check if the card has the hover class */
-        if(clickedAboutCard.classList.contains("about-card-hover")) {
+        if (clickedAboutCard.classList.contains("about-card-hover")) {
 
             /* Remove the class */
             clickedAboutCard.classList.remove("about-card-hover")
@@ -55,31 +55,31 @@ $(document).ready(function() {
     })
 
     /* If the card was cliked in a desktop, this eventListener prevents it to stays in hovered state if it was cliked while hovered */
-    $(".about-card").on("mouseleave", function(event) {
-        
+    $(".about-card").on("mouseleave", function (event) {
+
         event.currentTarget.classList.remove("about-card-hover")
 
     })
 
-    $("body").on("click", function(e) {
+    $("body").on("click", function (e) {
 
         var menu = document.querySelector("#menu")
         var menuBtn = document.querySelector(".menu-button")
 
-        if(menu.classList.contains("active-menu")) {
-            if(!menu.contains(e.target) && !menuBtn.contains(e.target)) {
+        if (menu.classList.contains("active-menu")) {
+            if (!menu.contains(e.target) && !menuBtn.contains(e.target)) {
 
                 closeMenu()
 
             }
         }
 
-        
 
-    }) 
+
+    })
 
     window.matchMedia('(prefers-color-scheme: dark)').addEventListener("change", changeIconsColor)
-    
+
 })
 
 /* Change the icon according to the user's theme */

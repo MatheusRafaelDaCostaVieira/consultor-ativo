@@ -1,6 +1,6 @@
 #home {
-    background-image: linear-gradient(var(--gradient-home-bg), var(--gradient-home-bg)), url("../images/backgrounds/home_background.webp");;
-    background-position: center;  
+    background-image: linear-gradient(var(--gradient-home-bg), var(--gradient-home-bg)), url("../images/backgrounds/home_background.webp");
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     height: 70vh;
@@ -97,11 +97,11 @@
 .menu-bar {
     --bg-color: var(--text-color-2);
 
-     background-color: var(--bg-color);
-     border-radius: 5px;
-     width: 40px;
-     height: 4px;
-} 
+    background-color: var(--bg-color);
+    border-radius: 5px;
+    width: 40px;
+    height: 4px;
+}
 
 /* H1 white color */
 .home-h1 {
@@ -109,7 +109,7 @@
 }
 
 /* Green word */
-.home-h1 > span {
+.home-h1>span {
     color: var(--brand-color);
 }
 
@@ -123,9 +123,10 @@
     margin-bottom: var(--margin-bottom);
 }
 
-.home-button:hover, .home-button:active {
-  --background: var(--light-hover-btn);
-  --color: var(--dark-text-color-hover-btn);
+.home-button:hover,
+.home-button:active {
+    --background: var(--light-hover-btn);
+    --color: var(--dark-text-color-hover-btn);
 }
 
 /* Navbar ul */
@@ -188,7 +189,7 @@
     .home-p {
         --margin-bottom: 15px;
     }
-    
+
 }
 
 /* Devices above 900px wide */
@@ -207,7 +208,7 @@
 
     .active-menu-navbar {
         --background: var(--navbar-blured-bg);
-    
+
         .menu-bar {
             --bg-color: var(--text-color-4);
         }
@@ -217,13 +218,13 @@
 
 /* Devices above 1000px wide */
 @media (1000px < width) {
-    
+
     .logo {
         --width: 35px;
     }
 
     .active-navbar {
-        
+
         .navbar-content {
             --height: 45px;
         }

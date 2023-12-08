@@ -1,4 +1,4 @@
-  /* Google fonts link */
+/* Google fonts link */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
 
 :root {
@@ -16,7 +16,7 @@
 
   --text-1-black: #161616;
   --text-2-black: #1E1E1E;
-  
+
   --font-family: 'Poppins', sans-serif;
 
   --brand-color: var(--green-color);
@@ -42,7 +42,7 @@
   --bg-hover-btn: var(--dark-hover-btn);
   --text-color-hover-btn: var(--light-text-color-hover-btn);
 
-  --navbar-blured-bg: rgba(245, 245, 247, 0.8);   
+  --navbar-blured-bg: rgba(245, 245, 247, 0.8);
   --navbar-active-text: #1E1E1E;
 
   --gradient-home-bg: rgba(22, 22, 22, 0.75);
@@ -71,7 +71,7 @@
 
     --navbar-blured-bg: rgba(22, 22, 22, 0.8);
     --navbar-active-text: #E8E8E8;
-    
+
     --plan-card-border: rgba(232, 232, 232, 0.3);
     --plan-card-inside-border: rgba(232, 232, 232, 0.3);
 
@@ -221,14 +221,15 @@ section {
   transition: var(--transition);
 }
 
-.button:hover, .button:active {
+.button:hover,
+.button:active {
   --background: var(--bg-hover-btn);
   --color: var(--text-color-hover-btn);
   scale: 1.06;
 }
 
 /* Remove anchor tag underline */
-.navigation-link > a {
+.navigation-link>a {
   text-decoration: none;
 }
 
@@ -244,7 +245,7 @@ section {
 }
 
 /* Navbar/Menu link hovered */
-.navigation-link .p:hover, 
+.navigation-link .p:hover,
 .navigation-link .p:active {
   --color: var(--brand-color) !important;
 }
@@ -276,10 +277,10 @@ section {
 
 /* Devices above 1000px wide */
 @media (1000px < width) {
-  
+
   .h4 {
     --font-size: 35px;
-    }
+  }
 
 }
 
