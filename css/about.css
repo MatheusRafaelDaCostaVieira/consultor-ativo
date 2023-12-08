@@ -123,10 +123,6 @@
         --width: 300px;
     }
 
-    #about {
-        --padding-top: 50px;
-    }
-
 }
 
 /* Devices above 800px wide */
