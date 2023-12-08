@@ -1,0 +1,104 @@
+.client-card-row {
+    --gap: 50px;
+    --justify-content: center;
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--gap);
+    justify-content: var(--justify-content);
+    width: 100%;
+}
+
+.client-card {
+    --height: 250px;
+    --max-width: 550px;
+    --width: 550px;
+
+    align-items: center;
+    background-color: var(--bg-2);
+    border-radius: 10px;
+    box-shadow: var(--box-shadow);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    height: var(--height);
+    justify-content: center;
+    margin-top: 63px;
+    min-width: 300px;
+    max-width: var(--max-width);
+    min-height: 100%;
+    padding: 50px 20px 0;
+    position: relative;
+    text-align: center;
+    width: var(--width);
+}
+
+.client-card:hover {
+
+    .client-image img {
+        transform: rotate(5deg);
+        scale: 1.05;
+    }
+
+    .client-h5 {
+        --color: var(--green-color);
+    }
+
+}
+
+.client-image {
+    border-radius: 50%;
+    height: 125px;
+    overflow: hidden;
+    margin-bottom: 30px;
+    position: absolute;
+    top: -63px;
+    width: 125px;
+
+    img {
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+        transition: var(--transition);
+        width: 100%;
+    }
+}
+
+.client-h5 {
+    --color: var(--text-color-3);
+
+    color: var(--color);
+    margin-bottom: 16px;
+    transition: var(--transition);
+}
+
+.client-p {
+    color: var(--text-color-4);
+}
+
+/* Devices over 779px wide */
+@media (779px < width) {
+
+    .client-card-row {
+        --gap: 30px;
+    }
+
+    .client-card {
+        --width: 360px;
+    }
+
+}
+
+/* Devices over 1169px wide */
+@media (1169px < width) {
+
+    .client-card {
+        --width: 360px;
+    }
+
+    .client-card-row {
+        --gap: 30px;
+        --justify-content: space-between;
+    }
+
+}
