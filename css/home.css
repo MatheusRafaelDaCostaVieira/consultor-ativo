@@ -137,6 +137,7 @@
 
 /* When menu gets open, navbar change it's styles */
 .active-menu-navbar {
+
     --background: transparent;
     --blur: none;
 
@@ -147,10 +148,12 @@
     .menu-bar {
         --bg-color: var(--text-color-4);
     }
+
 }
 
 /* Devices under 350px wide */
 @media(width < 350px) {
+
     .h1 {
         --font-size: 45px;
     }
@@ -162,6 +165,7 @@
     .home-p {
         --font-size: 14px;
     }
+
 }
 
 /* Devices above 680px wide */
@@ -174,7 +178,7 @@
     }
 
     .navbar {
-        --padding: 0 25px;
+        --padding: 0 35px;
     }
 
     .header {
@@ -218,7 +222,6 @@
         --width: 35px;
     }
 
-    /* Active navbar */
     .active-navbar {
         
         .navbar-content {
@@ -229,4 +232,5 @@
             --width: 30px;
         }
     }
+
 }
