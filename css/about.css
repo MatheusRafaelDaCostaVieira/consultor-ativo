@@ -24,6 +24,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 10px;
+    box-shadow: var(--box-shadow);
     height: var(--height);
     max-width: var(--max-width);
     min-width: 250px;
