@@ -176,7 +176,7 @@
     /* Make the home section stop at 700px height */
     #home {
         height: 100vh;
-        max-height: 650px;
+        max-height: 700px;
     }
 
     .navbar {
