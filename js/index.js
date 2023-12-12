@@ -75,13 +75,25 @@ $(document).ready(function () {
         $(":root").css("--transition", "linear")
     }
 
+    /* Call the scroll animation function when user scrolls */
+    window.addEventListener("scroll", scrollAnimation);
+
+    animationAfterLoad()
+    changeIconsColor()
+    activeNavbar()
+    scrollAnimation()
 })
 
-changeIconsColor()
-activeNavbar()
+/* Animates elements with the class hide-before-load after load */
+function animationAfterLoad() {
 
-/* Change the icon according to the user's theme */
+    $(".hide-before-load").addClass("animation-after-load")
+
+}
+
+/* Changes the icon according to the user's theme */
 function changeIconsColor() {
+
     const userTheme = window.matchMedia('(prefers-color-scheme: dark)');
 
     if (userTheme.matches) {
@@ -94,8 +106,9 @@ function changeIconsColor() {
 
 }
 
-/* If scroolTop is over 0, add active-navbar and active-navbar-menu classes. */
+/* If scroolTop is over 0, adds active-navbar and active-navbar-menu classes */
 function activeNavbar() {
+
     if ($(document).scrollTop() > 0 || $("body").scrollTop() > 0) {
 
         $(".navbar").addClass("active-navbar")
@@ -107,23 +120,56 @@ function activeNavbar() {
         $(".navbar").removeClass("active-navbar")
         $(".menu-container").removeClass("active-navbar-menu")
     }
+
 }
 
+/* Animates elements with class scroll-animation */
+function scrollAnimation() {
+
+    let scrollAnimationElement = document.querySelectorAll(".scroll-animation");
+
+    for (let i = 0; i < scrollAnimationElement.length; i++) {
+
+      let windowHeight = window.innerHeight;
+      let elementTop = scrollAnimationElement[i].getBoundingClientRect().top;
+      let elementVisible = 150;
+
+      if (elementTop < windowHeight - elementVisible) {
+
+        scrollAnimationElement[i].classList.add("active");
+
+      } else {
+
+        scrollAnimationElement[i].classList.remove("active");
+
+      }
+    }
+
+}
+
+/* Toggle the menu between open and closed */
 function toggleMenu() {
+
     $("body").toggleClass("block-scroll")
     $("#menu").toggleClass("active-menu")
     $(".navbar").toggleClass("active-menu-navbar")
 }
 
+
+/* Open the menu */
 function openMenu() {
+
     $("body").addClass("block-scroll")
     $("#menu").addClass("active-menu")
     $(".navbar").addClass("active-menu-navbar")
+
 }
 
 /* Close the menu, remove navbar white background and unblock the page's scroll */
 function closeMenu() {
+
     $("body").removeClass("block-scroll")
     $("#menu").removeClass("active-menu")
     $(".navbar").removeClass("active-menu-navbar")
+    
 }
