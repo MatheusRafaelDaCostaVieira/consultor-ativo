@@ -113,6 +113,30 @@ body {
   width: 0px;
 }
 
+/* Class that hides elements before load */
+.hide-before-load {
+  opacity: 0;
+  transition: var(--transition);
+}
+
+/* Class that shows elements after load */
+.animation-after-load {
+  opacity: 1;
+}
+
+/* Class that prepares the elements to be animateds */
+.scroll-animation {
+  opacity: 0;
+  transform: translateY(150px);
+  transition: var(--transition);
+}
+
+/* Animates the elements when user scrolls that page */
+.scroll-animation.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 /* H1 */
 .h1 {
   --font-size: 55px;
