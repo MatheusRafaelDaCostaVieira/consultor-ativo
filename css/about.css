@@ -16,6 +16,7 @@
 
 /* Div that builds the card and has the background image */
 .about-card {
+    --shadow: none;
     --height: 225px;
     --max-width: 400px;
     --width: 100%;
@@ -24,7 +25,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 10px;
-    box-shadow: var(--box-shadow);
+    box-shadow: var(--shadow);
     height: var(--height);
     max-width: var(--max-width);
     min-width: 250px;
@@ -61,8 +62,9 @@
 /* When about card gets hovered*/
 .about-card:hover,
 .about-card-hover {
+    --shadow: var(--box-shadow);
 
-    scale: 1.05;
+    scale: 1.03;
 
     .about-card-title {
         opacity: 0;
