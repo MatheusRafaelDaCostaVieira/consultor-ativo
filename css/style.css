@@ -185,7 +185,7 @@ body {
 .p {
   font-family: var(--font-family);
   font-style: light;
-  font-weight: 300;
+  font-weight: 400;
   line-height: normal;
 }
 
@@ -223,7 +223,7 @@ body {
   color: var(--color, #E8E8E8);
   font-family: var(--font-family);
   font-size: var(--font-size);
-  font-weight: 300;
+  font-weight: 400;
   padding: var(--padding);
   transition: var(--transition);
 }
