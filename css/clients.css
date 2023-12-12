@@ -13,12 +13,13 @@
 .client-card {
     --height: 250px;
     --max-width: 550px;
+    --shadow: none;
     --width: 550px;
 
     align-items: center;
     background-color: var(--bg-2);
     border-radius: 10px;
-    box-shadow: var(--box-shadow);
+    box-shadow: var(--shadow);
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -31,10 +32,15 @@
     padding: 50px 20px 0;
     position: relative;
     text-align: center;
+    transition: var(--transition);
     width: var(--width);
 }
 
 .client-card:hover {
+
+    --shadow: var(--box-shadow);
+
+    scale: 1.03;
 
     .client-image img {
         transform: rotate(5deg);
