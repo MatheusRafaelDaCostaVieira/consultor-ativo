@@ -1,4 +1,5 @@
 $(document).ready(function () {
+    
     /* And when the menu link get clicked */
     $(".menu-links .navigation-link").on("click", function () {
         closeMenu()
@@ -15,19 +16,7 @@ $(document).ready(function () {
 
     /* Actives when user scrolls */
     $(document).on("scroll", function () {
-
-        /* If scroolTop is over 0, add active-navbar and active-navbar-menu classes. */
-        if ($(document).scrollTop() > 0 || $("body").scrollTop() > 0) {
-
-            $(".navbar").addClass("active-navbar")
-            $(".menu-container").addClass("active-navbar-menu")
-
-        } else {
-
-            /* If it's 0, then remove them */
-            $(".navbar").removeClass("active-navbar")
-            $(".menu-container").removeClass("active-navbar-menu")
-        }
+        activeNavbar()
     })
 
     /* Calls the function that adds the hover class when the user hovers and/or clicks on the card */
@@ -63,8 +52,8 @@ $(document).ready(function () {
 
     $("body").on("click", function (e) {
 
-        var menu = document.querySelector("#menu")
-        var menuBtn = document.querySelector(".menu-button")
+        const menu = document.querySelector("#menu")
+        const menuBtn = document.querySelector(".menu-button")
 
         if (menu.classList.contains("active-menu")) {
             if (!menu.contains(e.target) && !menuBtn.contains(e.target)) {
@@ -74,13 +63,22 @@ $(document).ready(function () {
             }
         }
 
-
-
     })
 
-    window.matchMedia('(prefers-color-scheme: dark)').addEventListener("change", changeIconsColor)
+    /* Detects the user theme to change icons color */
+    window.matchMedia('(prefers-color-scheme: dark)')
+        .addEventListener("change", changeIconsColor)
+
+    /* Detect user device animation settings */
+    const query = window.matchMedia('(prefers-reduced-motion: reduce)');
+    if (query.matches) {
+        $(":root").css("--transition", "linear")
+    }
 
 })
+
+changeIconsColor()
+activeNavbar()
 
 /* Change the icon according to the user's theme */
 function changeIconsColor() {
@@ -96,12 +94,26 @@ function changeIconsColor() {
 
 }
 
+/* If scroolTop is over 0, add active-navbar and active-navbar-menu classes. */
+function activeNavbar() {
+    if ($(document).scrollTop() > 0 || $("body").scrollTop() > 0) {
+
+        $(".navbar").addClass("active-navbar")
+        $(".menu-container").addClass("active-navbar-menu")
+
+    } else {
+
+        /* If it's 0, then remove them */
+        $(".navbar").removeClass("active-navbar")
+        $(".menu-container").removeClass("active-navbar-menu")
+    }
+}
+
 function toggleMenu() {
     $("body").toggleClass("block-scroll")
     $("#menu").toggleClass("active-menu")
     $(".navbar").toggleClass("active-menu-navbar")
 }
-
 
 function openMenu() {
     $("body").addClass("block-scroll")
@@ -115,5 +127,3 @@ function closeMenu() {
     $("#menu").removeClass("active-menu")
     $(".navbar").removeClass("active-menu-navbar")
 }
-
-changeIconsColor() 
