@@ -347,6 +347,48 @@ body {
   width: 100%;
 }
 
+.form {
+  --padding: ;
+  --width: 300px;
+
+  padding: var(--padding);
+  min-width: 250pxs;
+  width: var(--width);
+}
+
+.form-ul {
+  list-style: none;
+  text-align: center;
+
+  li {
+      margin-bottom: 40px;
+  }
+
+  li:last-child {
+      margin-bottom: 0;
+  }
+}
+
+.form-p {
+  color: var(--text-color-4);
+  font-size: 16px;
+  text-align: center;
+
+  a {
+      color: var(--green-text);
+      text-decoration: none;
+  }
+}
+
+/* Devices under 375px wide */
+@media (max-width: 375px) {
+
+  .form {
+      --width: 100%;
+  }
+
+}
+
 /* Devices above 680px wide */
 @media (min-width: 681px) {
 
@@ -368,6 +410,15 @@ body {
 
   .container {
     --padding: 100px 15px 50px;
+  }
+
+}
+
+/* Devices above 700px wide */
+@media (min-width: 700px) {
+
+  .form {
+      --width: 350px;
   }
 
 }
