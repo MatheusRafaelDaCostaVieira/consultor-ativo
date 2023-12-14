@@ -4,8 +4,12 @@
     bottom: 0;
     height: 1;
     left: var(--left);
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     position: fixed;
+    -webkit-transition: var(--transition);
+    -o-transition: var(--transition);
     transition: var(--transition);
     z-index: 100;
 }
@@ -26,8 +30,13 @@
 
 /* The ul that contains the navbar navigation links */
 .menu-links {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     gap: 32px;
     list-style: none;
     text-align: left;
@@ -40,7 +49,7 @@
     color: var(--text-color-4);
 }
 
-@media (900px < width) {
+@media (min-width: 901px) {
 
     /* Hidding the menu button */
     #menu {

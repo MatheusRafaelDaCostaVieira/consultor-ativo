@@ -2,12 +2,19 @@
     --gap: 30px;
     --justify-content: center;
 
+
     justify-content: var(--justify-content);
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     flex-wrap: wrap;
     gap: var(--gap);
     max-width: 1200px;
     width: 100%;
+
+    -ms-flex-wrap: wrap;
+    -webkit-box-pack: var(--justify-content);
+    -ms-flex-pack: var(--justify-content);
 }
 
 /* Card content container */
@@ -20,11 +27,15 @@
     --shadow: none;
     --width: 100%;
 
+
+
     align-items: center;
     background-color: var(--background);
     border: 1px solid var(--plan-card-border);
     border-radius: 10px;
     box-shadow: var(--shadow);
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     flex-direction: column;
     height: var(--height);
@@ -35,6 +46,15 @@
     overflow: hidden;
     transition: var(--transition);
     width: var(--width);
+
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-box-shadow: var(--shadow);
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    -webkit-transition: var(--transition);
+    -o-transition: var(--transition);
 }
 
 .plan-card:hover {
@@ -72,12 +92,18 @@
 
 .plans-ul {
     text-align: left;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     flex-direction: column;
     gap: 10px;
     list-style: none;
     padding: 0 20px;
     width: 100%;
+
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
 }
 
 .plan-p {
@@ -93,11 +119,16 @@
 }
 
 .plan-card-footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     justify-content: space-between;
     margin-top: auto;
     padding: 0 20px;
+
     width: 100%;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
 }
 
 .footer-plan-p {
@@ -108,13 +139,21 @@
 
 .plan-button {
     align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+
+    -webkit-box-align: center;
+    -ms-flex-align: center;
 }
 
 .plan-button img {
     height: 20px;
     transition: var(--transition);
     width: 20px;
+
+    -webkit-transition: var(--transition);
+    -o-transition: var(--transition);
 }
 
 .plan-button:hover img {
@@ -154,7 +193,7 @@
 }
 
 /* Devices over 599px wide */
-@media (599px < width) {
+@media (min-width: 600px) {
 
     .plans-row {
         --gap: 10px;
@@ -163,7 +202,7 @@
 }
 
 /* Devices over 869px wide */
-@media (680px < width) {
+@media (min-width: 681px) {
 
     .plan-card {
         --max-width: 320px;
@@ -171,8 +210,8 @@
 
 }
 
-/* Devices over 869px wide */
-@media (1009px < width) {
+/* Devices over 1000px wide */
+@media (min-width: 1010px) {
 
     .plans-row {
         --justify-content: space-between;

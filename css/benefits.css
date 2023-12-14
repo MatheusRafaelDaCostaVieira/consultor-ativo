@@ -2,11 +2,22 @@
 .benefits-row {
     --gap: 80px;
 
-    align-items: center;
+    -webkit-box-align: center;
+
+        -ms-flex-align: center;
+
+            align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     gap: var(--gap);
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
 }
 
 /* Image, title and paragraph container */
@@ -15,10 +26,21 @@
     --text-aling: center;
     --width: 100%;
 
-    align-items: center;
+    -webkit-box-align: center;
+
+        -ms-flex-align: center;
+
+            align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: var(--flex-direction);
-    justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: var(--flex-direction);
+            flex-direction: var(--flex-direction);
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     max-width: 1200px;
     text-align: var(--text-aling);
     width: var(--width);
@@ -32,7 +54,9 @@
 
 /* Space between image and text */
 .benefit-card-items-space {
-    flex: 1 0 30px;
+    -webkit-box-flex: 1;
+        -ms-flex: 1 0 30px;
+            flex: 1 0 30px;
 }
 
 /* Benefit card image */
@@ -41,7 +65,8 @@
     --width: 230px;
 
     height: var(--height);
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
     width: var(--width);
 }
 
@@ -56,6 +81,8 @@
 
     color: var(--color);
     margin-bottom: var(--h3-bottom-margin);
+    -webkit-transition: var(--transition);
+    -o-transition: var(--transition);
     transition: var(--transition);
 }
 
@@ -66,7 +93,7 @@
 }
 
 /* Devices above 900px wide */
-@media (900px < width) {
+@media (min-width: 901px) {
 
     .benefits-row {
         --gap: 50px;
@@ -82,11 +109,15 @@
     /* Invert image position of even cards */
     .benefits-card:nth-of-type(even) {
         .benefit-image {
-            order: 2;
+            -webkit-box-ordinal-group: 3;
+                -ms-flex-order: 2;
+                    order: 2;
         }
 
         .benefit-card-items-space {
-            order: 1;
+            -webkit-box-ordinal-group: 2;
+                -ms-flex-order: 1;
+                    order: 1;
         }
     }
 
@@ -99,7 +130,7 @@
 }
 
 /* Devices above 1200px wide */
-@media (1200px < width) {
+@media (min-width: 1201px) {
 
     /* Changing image size */
     .benefit-image {

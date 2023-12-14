@@ -94,6 +94,8 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+
+  -webkit-box-sizing: border-box;
 }
 
 /* Smooth scroll */
@@ -105,9 +107,17 @@ html {
 body {
   align-items: center;
   background-color: var(--bg-1);
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   flex-direction: column;
   overflow-x: hidden;
+
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
 }
 
 .block-scroll {
@@ -124,6 +134,9 @@ body {
 .hide-before-load {
   opacity: 0;
   transition: var(--transition);
+
+  -webkit-transition: var(--transition);
+  -o-transition: var(--transition);
 }
 
 /* Class that shows elements after load */
@@ -134,13 +147,21 @@ body {
 /* Class that prepares the elements to be animateds */
 .scroll-animation {
   opacity: 0;
-  transform: translateY(150px);
   transition: var(--transition);
+  transform: translateY(150px);
+
+  -webkit-transition: var(--transition);
+  -o-transition: var(--transition);
+  -webkit-transform: translateY(150px);
+  -ms-transform: translateY(150px);
 }
 
 /* Animates the elements when user scrolls that page */
 .scroll-animation.active {
   opacity: 1;
+
+  -webkit-transform: translateY(0);
+  -ms-transform: translateY(0);
   transform: translateY(0);
 }
 
@@ -176,6 +197,9 @@ body {
   line-height: normal;
   text-align: center;
   transition: var(--transition);
+
+  -webkit-transition: var(--transition);
+  -o-transition: var(--transition);
 }
 
 .h2:hover {
@@ -231,13 +255,21 @@ body {
   --padding: 50px 15px;
 
   align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   flex-direction: column;
   gap: var(--gap);
   height: auto;
   max-width: 1300px;
   padding: var(--padding);
-  width: 100vw;
+  width: 100vw;  
+  
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
 }
 
 /* Logo */
@@ -246,6 +278,8 @@ body {
 
   transition: var(--transition);
   width: var(--width);
+  -webkit-transition: var(--transition);
+  -o-transition: var(--transition);
 }
 
 /* Button styles */
@@ -263,6 +297,9 @@ body {
   padding: var(--padding);
   text-decoration: none;
   transition: var(--transition);
+
+  -webkit-transition: var(--transition);
+  -o-transition: var(--transition);
 }
 
 .button:hover,
@@ -286,6 +323,9 @@ body {
   font-family: var(--font-family);
   font-size: var(--font-size);
   transition: var(--transition);
+
+  -webkit-transition: var(--transition);
+  -o-transition: var(--transition);
 }
 
 /* Navbar/Menu link hovered */

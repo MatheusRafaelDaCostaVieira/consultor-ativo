@@ -2,11 +2,18 @@
     --gap: 50px;
     --justify-content: center;
 
+    display: -webkit-box;
+
+    display: -ms-flexbox;
+
     display: flex;
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     gap: var(--gap);
     max-width: 1200px;
-    justify-content: var(--justify-content);
+    -webkit-box-pack: var(--justify-content);
+        -ms-flex-pack: var(--justify-content);
+            justify-content: var(--justify-content);
     width: 100%;
 }
 
@@ -16,15 +23,27 @@
     --shadow: none;
     --width: 550px;
 
-    align-items: center;
+    -webkit-box-align: center;
+
+        -ms-flex-align: center;
+
+            align-items: center;
     background-color: var(--bg-2);
     border-radius: 10px;
-    box-shadow: var(--shadow);
+    -webkit-box-shadow: var(--shadow);
+            box-shadow: var(--shadow);
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     gap: 10px;
     height: var(--height);
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     margin-top: 63px;
     min-width: 300px;
     max-width: var(--max-width);
@@ -32,6 +51,8 @@
     padding: 50px 20px 0;
     position: relative;
     text-align: center;
+    -webkit-transition: var(--transition);
+    -o-transition: var(--transition);
     transition: var(--transition);
     width: var(--width);
 }
@@ -43,7 +64,9 @@
     scale: 1.03;
 
     .client-image img {
-        transform: rotate(5deg);
+        -webkit-transform: rotate(5deg);
+            -ms-transform: rotate(5deg);
+                transform: rotate(5deg);
         scale: 1.05;
     }
 
@@ -64,8 +87,12 @@
 
     img {
         height: 100%;
-        object-fit: cover;
-        object-position: center;
+        -o-object-fit: cover;
+           object-fit: cover;
+        -o-object-position: center;
+           object-position: center;
+        -webkit-transition: var(--transition);
+        -o-transition: var(--transition);
         transition: var(--transition);
         width: 100%;
     }
@@ -76,6 +103,8 @@
 
     color: var(--color);
     margin-bottom: 16px;
+    -webkit-transition: var(--transition);
+    -o-transition: var(--transition);
     transition: var(--transition);
 }
 
@@ -84,7 +113,7 @@
 }
 
 /* Devices over 779px wide */
-@media (779px < width) {
+@media (min-width: 778px) {
 
     .client-card-row {
         --gap: 30px;
@@ -97,7 +126,7 @@
 }
 
 /* Devices over 1169px wide */
-@media (1169px < width) {
+@media (min-width: 1169px) {
 
     .client-card {
         --width: 360px;

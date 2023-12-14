@@ -6,11 +6,17 @@
 
 /* About cards container */
 .about-cards-row {
-    align-content: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     gap: 30px;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
 }
 
 
@@ -25,37 +31,52 @@
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 10px;
-    box-shadow: var(--shadow);
+    -webkit-box-shadow: var(--shadow);
+            box-shadow: var(--shadow);
     height: var(--height);
     max-width: var(--max-width);
     min-width: 250px;
     overflow: hidden;
     position: relative;
+    -webkit-transition: var(--transition);
+    -o-transition: var(--transition);
     transition: var(--transition);
     width: var(--width);
 }
 
 .about-card-1 {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(var(--gradient-about-card)), to(var(--gradient-about-card))), url("../images/about/about_image_1.webp");
+    background-image: -o-linear-gradient(var(--gradient-about-card), var(--gradient-about-card)), url("../images/about/about_image_1.webp");
     background-image: linear-gradient(var(--gradient-about-card), var(--gradient-about-card)), url("../images/about/about_image_1.webp");
 }
 
 .about-card-2 {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(var(--gradient-about-card)), to(var(--gradient-about-card))), url("../images/about/about_image_2.webp");
+    background-image: -o-linear-gradient(var(--gradient-about-card), var(--gradient-about-card)), url("../images/about/about_image_2.webp");
     background-image: linear-gradient(var(--gradient-about-card), var(--gradient-about-card)), url("../images/about/about_image_2.webp");
 }
 
 .about-card-3 {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(var(--gradient-about-card)), to(var(--gradient-about-card))), url("../images/about/about_image_3.webp");
+    background-image: -o-linear-gradient(var(--gradient-about-card), var(--gradient-about-card)), url("../images/about/about_image_3.webp");
     background-image: linear-gradient(var(--gradient-about-card), var(--gradient-about-card)), url("../images/about/about_image_3.webp");
 }
 
 .about-card-4 {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(var(--gradient-about-card)), to(var(--gradient-about-card))), url("../images/about/about_image_4.webp");
+    background-image: -o-linear-gradient(var(--gradient-about-card), var(--gradient-about-card)), url("../images/about/about_image_4.webp");
     background-image: linear-gradient(var(--gradient-about-card), var(--gradient-about-card)), url("../images/about/about_image_4.webp");
 }
 
 .about-card-5 {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(var(--gradient-about-card)), to(var(--gradient-about-card))), url("../images/about/about_image_5.webp");
+    background-image: -o-linear-gradient(var(--gradient-about-card), var(--gradient-about-card)), url("../images/about/about_image_5.webp");
     background-image: linear-gradient(var(--gradient-about-card), var(--gradient-about-card)), url("../images/about/about_image_5.webp");
 }
 
 .about-card-6 {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(var(--gradient-about-card)), to(var(--gradient-about-card))), url("../images/about/about_image_6.webp");
+    background-image: -o-linear-gradient(var(--gradient-about-card), var(--gradient-about-card)), url("../images/about/about_image_6.webp");
     background-image: linear-gradient(var(--gradient-about-card), var(--gradient-about-card)), url("../images/about/about_image_6.webp");
 }
 
@@ -79,19 +100,28 @@
 
 /* Makes the background image be blured */
 .about-card-paragraph {
-    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+            backdrop-filter: blur(10px);
 }
 
 /* Alings the text, sets the transition and size of the inner divs of the about cards */
 .about-card-title,
 .about-card-paragraph {
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     height: 100%;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     padding: 15px 15px;
     position: absolute;
     text-align: center;
+    -webkit-transition: var(--transition);
+    -o-transition: var(--transition);
     transition: var(--transition);
     width: 100%;
 }
@@ -114,11 +144,8 @@
     visibility: 0;
 }
 
-/* Devices above 467px wide */
-@media(467px < width) {}
-
 /* Devices above or equal to 680px wide */
-@media (680px <=width) {
+@media (min-width: 680px) {
 
     .about-card {
         --max-width: 100%;
@@ -128,7 +155,7 @@
 }
 
 /* Devices above 800px wide */
-@media (800px < width) {
+@media (min-width: 801px) {
 
     .about-card {
         --width: 325px;
@@ -137,7 +164,7 @@
 }
 
 /* Devices above 950px wide */
-@media (950px < width) {
+@media (min-width: 951px) {
 
     .about-card {
         --height: 210px;
@@ -146,7 +173,7 @@
 }
 
 /* Devices above 950px wide */
-@media (1200px < width) {
+@media (min-width: 1201px) {
 
     .about-card {
         --width: 360px;
@@ -155,7 +182,7 @@
 }
 
 /* Devices above 950px wide */
-@media (1400px < width) {
+@media (min-width: 1401px) {
 
     .about-card {
         --height: 250px;

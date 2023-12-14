@@ -1,0 +1,194 @@
+body {
+    align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+}
+
+#sing-up {
+    --border-radius: 0;
+    --grid-template-columns: 1fr;
+
+    border-radius: var(--border-radius);
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: var(--grid-template-columns);
+    grid-template-columns: var(--grid-template-columns);
+    height: 100vh;
+    max-height: 1080px;
+    max-width: 2560px;
+    overflow: hidden;
+    width: 100%;
+
+    -ms-grid-columns: var(--grid-template-columns);
+}
+
+/* 
+Limitar a altura da div em 1080px.
+Limitar a largura da div em 2560px.
+*/
+
+.sing-up-left {
+    --display: none;
+
+    align-items: center;
+    background-image: -o-linear-gradient(var(--gradient-sing-up-bg), var(--gradient-sing-up-bg)), url(../images/backgrounds/sing-up_background.webp);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(var(--gradient-sing-up-bg)), to(var(--gradient-sing-up-bg))), url(../images/backgrounds/sing-up_background.webp);
+    background-image: linear-gradient(var(--gradient-sing-up-bg), var(--gradient-sing-up-bg)), url(../images/backgrounds/sing-up_background.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: var(--display);
+    flex-direction: column;
+    gap: 15px;
+    height: 100%;
+    justify-content: center;
+    
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+
+    .sing-up-p {
+        color: var(--text-color-2);
+        font-size: 16px;
+    }
+
+}
+
+.sing-up-right {
+    --gap: 60px;
+
+
+    align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap);
+    height: 100%;
+    justify-content: center;
+    
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+}
+
+.sing-up-form {
+    --width: 270px;
+
+    width: var(--width);
+}
+
+.form-ul {
+    list-style: none;
+    text-align: center;
+
+    li {
+        margin-bottom: 40px;
+    }
+
+    li:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.form-textarea.input {
+    --border: 1px solid var(--input-border);
+    
+    border-radius: 10px;
+    padding: 10px;
+    resize: none;
+}
+
+.form-select {
+    background-color: var(--bg-1);
+    border: 1px solid var(--input-border);
+    border-radius: 10px;
+    color: var(--text-color-4);
+    font-family: var(--font-family);
+    font-size: 16px;
+    text-align: center;
+    padding: 10px 15px;
+    -moz-appearance: none; 
+    -webkit-appearance: none; 
+
+    option {
+        background-color: var(--bg-2);
+    }
+}
+
+.form-p {
+    color: var(--text-color-4);
+    font-size: 16px;
+
+    a {
+        color: var(--green-text);
+        text-decoration: none;
+    }
+}
+
+/* Devices above 800px wide */
+@media (min-height: 800px) {
+
+    /* Increases the spacement between the form items */
+    .sing-up-right {
+        --gap: 80px;
+    }
+
+}
+
+/* Devices above 680px wide */
+@media (min-width: 681px) {
+  
+}
+
+/* Devices above 1000px wide */
+@media (min-width: 1001px) {
+
+    .sing-up-form {
+        --width: 350px;
+    }
+
+}
+
+/* Devices above 1200px wide */
+@media (min-width: 1201px) {
+
+}
+
+@media (min-width: 1100px) {
+        
+    #sing-up {
+        --grid-template-columns: 1.22fr 1fr;
+    }
+
+    .sing-up-left {
+        --display: flex;
+    }
+}
+
+@media (min-height: 2560px), (min-height: 1080px) {
+
+    body {
+        padding: 10px;
+    }
+
+    #sing-up {
+        --border-radius: 25px;
+    }
+}
