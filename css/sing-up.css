@@ -1,7 +1,5 @@
 body {
     align-items: center;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     height: 100vh;
     justify-content: center;
@@ -39,8 +37,6 @@ Limitar a largura da div em 2560px.
     --display: none;
 
     align-items: center;
-    background-image: -o-linear-gradient(var(--gradient-sing-up-bg), var(--gradient-sing-up-bg)), url(../images/backgrounds/sing-up_background.webp);
-    background-image: -webkit-gradient(linear, left top, left bottom, from(var(--gradient-sing-up-bg)), to(var(--gradient-sing-up-bg))), url(../images/backgrounds/sing-up_background.webp);
     background-image: linear-gradient(var(--gradient-sing-up-bg), var(--gradient-sing-up-bg)), url(../images/backgrounds/sing-up_background.webp);
     background-position: center;
     background-repeat: no-repeat;
@@ -50,10 +46,6 @@ Limitar a largura da div em 2560px.
     gap: 15px;
     height: 100%;
     justify-content: center;
-    
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
     -webkit-box-align: center;
     -ms-flex-align: center;
     -webkit-box-pack: center;
@@ -68,43 +60,20 @@ Limitar a largura da div em 2560px.
 
 .sing-up-right {
     --gap: 60px;
-
+    --padding: ;
 
     align-items: center;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     flex-direction: column;
     gap: var(--gap);
     height: 100%;
     justify-content: center;
-    
+    padding: var(--padding);
+
     -webkit-box-align: center;
     -ms-flex-align: center;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
-}
-
-.sing-up-form {
-    --width: 270px;
-
-    width: var(--width);
-}
-
-.form-ul {
-    list-style: none;
-    text-align: center;
-
-    li {
-        margin-bottom: 40px;
-    }
-
-    li:last-child {
-        margin-bottom: 0;
-    }
 }
 
 .form-textarea.input {
@@ -132,14 +101,22 @@ Limitar a largura da div em 2560px.
     }
 }
 
-.form-p {
-    color: var(--text-color-4);
-    font-size: 16px;
+.form-select-button {
+    --display: inline-flex;
+    --flex-direction: column;
 
-    a {
-        color: var(--green-text);
-        text-decoration: none;
+    display: var(--display);
+    flex-direction: var(--flex-direction);
+    row-gap: 40px;
+}
+
+/* Devices under 375px wide */
+@media (max-width: 375px) {
+
+    .sing-up-right {
+        --padding: 15px;
     }
+
 }
 
 /* Devices above 800px wide */
@@ -157,11 +134,14 @@ Limitar a largura da div em 2560px.
   
 }
 
-/* Devices above 1000px wide */
-@media (min-width: 1001px) {
+/* Devices above 700px wide */
+@media (min-width: 700px) {
 
-    .sing-up-form {
-        --width: 350px;
+    .form-select-button {
+        --display: flex;
+        --flex-direction: row;
+
+        justify-content: space-between;
     }
 
 }
