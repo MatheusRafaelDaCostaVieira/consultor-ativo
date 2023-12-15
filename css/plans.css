@@ -31,7 +31,7 @@
 
     align-items: center;
     background-color: var(--background);
-    border: 1px solid var(--plan-card-border);
+    border: 1px solid var(--border);
     border-radius: 10px;
     box-shadow: var(--shadow);
     display: -webkit-box;
@@ -65,7 +65,7 @@
 
 .plan-h5 {
     --background: transparent;
-    --border-color: var(--plan-card-inside-border);
+    --border-color: var(--border);
     --color: var(--text-color-3);
     --margin-bottom: 30px;
 
@@ -163,19 +163,19 @@
 .prata-plan-card {
 
     .plan-h5 {
-        --background: var(--plan-card-green-bg);
+        --background: var(--accent-background);
         --border-color: none;
         --color: var(--text-color-1);
     }
 
     .plan-h4 {
-        --color: var(--plan-card-green-bg);
+        --color: var(--accent-text);
     }
 }
 
 .gold-plan-card {
 
-    --background: var(--plan-card-green-bg);
+    --background: var(--accent-background);
 
     .plan-h5 {
         --border-color: var(--plan-card-white-border);

@@ -1,7 +1,7 @@
 #home {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(var(--gradient-home-bg)), to(var(--gradient-home-bg))), url("../images/backgrounds/home_background.webp");
-    background-image: -o-linear-gradient(var(--gradient-home-bg), var(--gradient-home-bg)), url("../images/backgrounds/home_background.webp");
-    background-image: linear-gradient(var(--gradient-home-bg), var(--gradient-home-bg)), url("../images/backgrounds/home_background.webp");
+    background-image: -webkit-gradient(linear, left top, left bottom, from(var(--gradient-75)), to(var(--gradient-75))), url("../images/backgrounds/home_background.webp");
+    background-image: -o-linear-gradient(var(--gradient-75), var(--gradient-75)), url("../images/backgrounds/home_background.webp");
+    background-image: linear-gradient(var(--gradient-75), var(--gradient-75)), url("../images/backgrounds/home_background.webp");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -42,7 +42,7 @@
 
 /* Active navbar */
 .active-navbar {
-    --background: var(--navbar-blured-bg);
+    --background: var(--gradient-80);
     --blur: 20px;
 
     .navbar-content {
@@ -51,7 +51,7 @@
 
     /* Navigation links color */
     .navigation-link p {
-        --color: var(--navbar-active-text);
+        --color: var(--active-navbar-text);
     }
 
     /* Menu bars color */
@@ -154,8 +154,8 @@
 
 .home-button:hover,
 .home-button:active {
-    --background: var(--light-hover-btn);
-    --color: var(--dark-text-color-hover-btn);
+    --background: var(--home-hover-btn-background);
+    --color: var(--home-hover-btn-text);
 }
 
 /* Navbar ul */
@@ -238,7 +238,7 @@
     }
 
     .active-menu-navbar {
-        --background: var(--navbar-blured-bg);
+        --background: var(--gradient-80);
 
         .menu-bar {
             --bg-color: var(--text-color-4);

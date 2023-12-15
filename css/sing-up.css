@@ -39,9 +39,9 @@ Limitar a largura da div em 2560px.
     --display: none;
 
     align-items: center;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(var(--gradient-sing-up-bg)), to(var(--gradient-sing-up-bg))), url(../images/backgrounds/sing-up_background.webp);
-    background-image: -o-linear-gradient(var(--gradient-sing-up-bg), var(--gradient-sing-up-bg)), url(../images/backgrounds/sing-up_background.webp);
-    background-image: linear-gradient(var(--gradient-sing-up-bg), var(--gradient-sing-up-bg)), url(../images/backgrounds/sing-up_background.webp);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(var(--gradient-75)), to(var(--gradient-75))), url(../images/backgrounds/sing-up_background.webp);
+    background-image: -o-linear-gradient(var(--gradient-75), var(--gradient-75)), url(../images/backgrounds/sing-up_background.webp);
+    background-image: linear-gradient(var(--gradient-75), var(--gradient-75)), url(../images/backgrounds/sing-up_background.webp);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -93,7 +93,7 @@ Limitar a largura da div em 2560px.
 }
 
 .form-textarea.input {
-    --border: 1px solid var(--input-border);
+    --border-around: 1px solid var(--border);
     
     border-radius: 10px;
     padding: 10px;
@@ -102,7 +102,7 @@ Limitar a largura da div em 2560px.
 
 .form-select {
     background-color: var(--bg-1);
-    border: 1px solid var(--input-border);
+    border: 1px solid var(--border);
     border-radius: 10px;
     color: var(--text-color-4);
     font-family: var(--font-family);

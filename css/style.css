@@ -3,8 +3,6 @@
 
 :root {
 
-  --green-color: #008037;
-
   --surface-1-light: #F5F5F7;
   --surface-2-light: #E8E8E8;
 
@@ -19,12 +17,12 @@
 
   --font-family: 'Poppins', sans-serif;
 
-  --brand-color: var(--green-color);
+  --accent-text: #008037;
+  --accent-background: #008037;
 
-  --dark-hover-btn: #1E1E1E;
-  --light-hover-btn: #E8E8E8;
-  --light-text-color-hover-btn: #E8E8E8;
-  --dark-text-color-hover-btn: #1E1E1E;
+
+  --bg-hover-btn: #1E1E1E;
+  --text-color-hover-btn: #E8E8E8;
 
   --bg-1: var(--surface-1-light);
   --bg-2: var(--surface-2-light);
@@ -34,32 +32,21 @@
   --text-color-3: var(--text-1-black);
   --text-color-4: var(--text-2-black);
 
-  --h3-bottom-margin: 10px;
-
+  --border: rgba(30, 30, 30, 0.3);
   --box-shadow-color: rgba(30, 30, 30, 0.3);
   --box-shadow: 5px 3px 5px 0px var(--box-shadow-color);
 
-  --bg-hover-btn: var(--dark-hover-btn);
-  --text-color-hover-btn: var(--light-text-color-hover-btn);
+  --gradient-80: rgba(245, 245, 247, 0.8);
+  --gradient-75: rgba(22, 22, 22, 0.75);
+  --gradient-70: rgba(22, 22, 22, 0.70);
 
-  --navbar-blured-bg: rgba(245, 245, 247, 0.8);
-  --navbar-active-text: #1E1E1E;
+  --active-navbar-text: #1E1E1E;
 
-  --gradient-home-bg: rgba(22, 22, 22, 0.75);
-  --gradient-about-card: rgba(22, 22, 22, 0.7);
+  --home-hover-btn-background: #E8E8E8;
+  --home-hover-btn-text: #1E1E1E;
 
-  --plan-card-border: rgba(30, 30, 30, 0.3);
   --plan-card-white-border: rgba(232, 232, 232, 0.3);
-  --plan-card-inside-border: rgba(30, 30, 30, 0.3);
-  --plan-card-green-bg: var(--green-color);
 
-  --footer-bg: #008037;
-
-  --gradient-sing-up-bg: rgba(22, 22, 22, 0.75);
-  --sing-up-border: rgba(30, 30, 30, 0.3);
-
-  --input-border: rgba(30, 30, 30, 0.3);
-  --green-text: #008037;
   --transition: 150ms ease-in;
 
   /* Dark mode */
@@ -71,20 +58,16 @@
     --text-color-3: var(--text-1-white);
     --text-color-4: var(--text-2-white);
 
+    --border: rgba(232, 232, 232, 0.3);
     --box-shadow-color: rgba(232, 232, 232, 0.3);
 
-    --bg-hover-btn: var(--light-hover-btn);
-    --text-color-hover-btn: var(--dark-text-color-hover-btn);
+    --gradient-80: rgba(22, 22, 22, 0.8);
 
-    --navbar-blured-bg: rgba(22, 22, 22, 0.8);
-    --navbar-active-text: #E8E8E8;
+    --active-navbar-text: #E8E8E8;
 
-    --plan-card-border: rgba(232, 232, 232, 0.3);
-    --plan-card-inside-border: rgba(232, 232, 232, 0.3);
+    --bg-hover-btn: #E8E8E8;
+    --text-color-hover-btn: #1E1E1E;
 
-    --sing-up-border: rgba(232, 232, 232, 0.3);    
-
-    --input-border: rgba(232, 232, 232, 0.3);
   }
 
 }
@@ -103,7 +86,7 @@ html {
   scroll-behavior: smooth;
 }
 
-/* Aling body items */
+/* Aling body items to center */
 body {
   align-items: center;
   background-color: var(--bg-1);
@@ -120,6 +103,7 @@ body {
   -ms-flex-direction: column;
 }
 
+/* Class that blocks the page scrolling */
 .block-scroll {
   height: 100%;
   overflow: hidden;
@@ -144,7 +128,7 @@ body {
   opacity: 1;
 }
 
-/* Class that prepares the elements to be animateds */
+/* Class that prepares the elements to be animated */
 .scroll-animation {
   opacity: 0;
   transition: var(--transition);
@@ -165,7 +149,6 @@ body {
   transform: translateY(0);
 }
 
-/* H1 */
 .h1 {
   --font-size: 55px;
 
@@ -178,11 +161,10 @@ body {
   text-align: center;
 
   span {
-    color: var(--green-text);
+    color: var(--accent-text);
   }
 }
 
-/* H2 */
 .h2 {
   --color: var(--text-color-3);
   --font-size: 35px;
@@ -203,11 +185,10 @@ body {
 }
 
 .h2:hover {
-  --color: var(--green-text);
+  --color: var(--accent-text);
   --letter-spacing: 2px;
 }
 
-/* H3 */
 .h3 {
   --font-size: 22px;
 
@@ -218,7 +199,6 @@ body {
   line-height: normal;
 }
 
-/* h4 */
 .h4 {
   --font-size: 30px;
 
@@ -229,8 +209,6 @@ body {
   line-height: normal;
 }
 
-
-/* h5 */
 .h5 {
   --font-size: 20px;
 
@@ -241,7 +219,6 @@ body {
   line-height: normal;
 }
 
-/* Paragraph */
 .p {
   font-family: var(--font-family);
   font-style: light;
@@ -249,7 +226,7 @@ body {
   line-height: normal;
 }
 
-/* Class used in the containers */
+/* Class used in most of the containers */
 .container {
   --gap: 100px;
   --padding: 50px 15px;
@@ -263,8 +240,8 @@ body {
   height: auto;
   max-width: 1300px;
   padding: var(--padding);
-  width: 100vw;  
-  
+  width: 100vw;
+
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
@@ -272,7 +249,7 @@ body {
   -ms-flex-align: center;
 }
 
-/* Logo */
+/* Logo default styles */
 .logo {
   --width: 40px;
 
@@ -282,7 +259,7 @@ body {
   -o-transition: var(--transition);
 }
 
-/* Button styles */
+/* Button default styles */
 .button {
   --font-size: 16px;
   --padding: 10px 35px;
@@ -331,14 +308,15 @@ body {
 /* Navbar/Menu link hovered */
 .navigation-link .p:hover,
 .navigation-link .p:active {
-  --color: var(--brand-color) !important;
+  --color: var(--accent-text);
 }
 
+/* Input default styles */
 .input {
-  --border: none;
+  --border-around: none;
 
-  border: var(--border);
-  border-bottom: 1px solid var(--input-border);
+  border: var(--border-around);
+  border-bottom: 1px solid var(--border);
   background: transparent;
   color: var(--text-color-4);
   font-family: var(--font-family);
@@ -347,6 +325,7 @@ body {
   width: 100%;
 }
 
+/* Form default styles */
 .form {
   --padding: ;
   --width: 300px;
@@ -355,39 +334,40 @@ body {
   min-width: 200px;
   width: var(--width);
 }
-
+/* Ul that contains the items */
 .form-ul {
   list-style: none;
   text-align: center;
 
   li {
-      margin-bottom: 40px;
+    margin-bottom: 40px;
   }
 
   li:last-child {
-      margin-bottom: 0;
+    margin-bottom: 0;
   }
 }
 
+/* Paragraph under the form */
 .form-p {
   bottom: 0;
   color: var(--text-color-4);
-  font-size: 16px;       
+  font-size: 16px;
   position: absolute;
   margin-bottom: 15px;
   text-align: center;
 
   a {
-      color: var(--green-text);
-      text-decoration: none;
+    color: var(--accent-text);
+    text-decoration: none;
   }
 }
 
-/* Devices under 375px wide */
+/* Devices under 376px wide */
 @media (max-width: 375px) {
 
   .form {
-      --width: 100%;
+    --width: 100%;
   }
 
 }
@@ -417,11 +397,11 @@ body {
 
 }
 
-/* Devices above 700px wide */
+/* Devices above 699px wide */
 @media (min-width: 700px) {
 
   .form {
-      --width: 350px;
+    --width: 350px;
   }
 
 }
