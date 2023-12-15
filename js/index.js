@@ -97,11 +97,11 @@ function changeIconsColor() {
     const userTheme = window.matchMedia('(prefers-color-scheme: dark)');
 
     if (userTheme.matches) {
-        $(".plan-p .responsive-icon").attr("src", "./images/icons/light-check.svg")
-        $(".plan-button-responsive-icon img").attr("src", "./images/icons/light-plan-btn.svg")
+        $(".plan-p .responsive-icon").attr("src", "../images/icons/light-check.svg")
+        $(".plan-button-responsive-icon img").attr("src", "../images/icons/light-plan-btn.svg")
     } else {
-        $(".plan-p .responsive-icon").attr("src", "./images/icons/dark-check.svg")
-        $(".plan-button-responsive-icon img").attr("src", "./images/icons/dark-plan-btn.svg")
+        $(".plan-p .responsive-icon").attr("src", "../images/icons/dark-check.svg")
+        $(".plan-button-responsive-icon img").attr("src", "../images/icons/dark-plan-btn.svg")
     }
 
 }
