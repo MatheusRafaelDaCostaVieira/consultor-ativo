@@ -352,7 +352,7 @@ body {
   --width: 300px;
 
   padding: var(--padding);
-  min-width: 250pxs;
+  min-width: 200px;
   width: var(--width);
 }
 
@@ -370,8 +370,11 @@ body {
 }
 
 .form-p {
+  bottom: 0;
   color: var(--text-color-4);
-  font-size: 16px;
+  font-size: 16px;       
+  position: absolute;
+  margin-bottom: 15px;
   text-align: center;
 
   a {
