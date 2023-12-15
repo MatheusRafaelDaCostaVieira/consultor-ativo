@@ -14,5 +14,12 @@
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
+    padding: 0 30px;
     width: 100vw;
+
+    .form-p {
+        bottom: 0;
+        position: absolute;
+        margin-bottom: 30px;
+    }
 }
