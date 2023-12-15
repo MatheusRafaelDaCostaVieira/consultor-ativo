@@ -1,3 +1,11 @@
+body {
+    align-items: center;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    width: 100vw;
+}
+
 #login {
     -webkit-box-align: center;
     -ms-flex-align: center;
@@ -14,7 +22,10 @@
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
+    max-height: 900px;
+    max-width: 1920px;
     padding: 0 30px;
+    position: relative;
     width: 100vw;
 
     .logo {
