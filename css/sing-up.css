@@ -116,12 +116,12 @@ Limitar a largura da div em 2560px.
 .form-select-button {
     --display: inline-flex;
     --flex-direction: column;
-
-    display: var(--display);
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: var(--flex-direction);
-            flex-direction: var(--flex-direction);
+    
+        display: var(--display);
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: var(--flex-direction);
+                flex-direction: var(--flex-direction);
     row-gap: 40px;
 }
 
@@ -129,7 +129,7 @@ Limitar a largura da div em 2560px.
 @media (max-width: 375px) {
 
     .sing-up-right {
-        --padding: 15px;
+        --padding: 0 30px;
     }
 
 }
