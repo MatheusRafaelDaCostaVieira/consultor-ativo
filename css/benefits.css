@@ -47,15 +47,9 @@
 }
 
 .benefits-card:hover {
-<<<<<<< HEAD
-    .benefit-h3 {
-        --color: var(--accent-text);
-    }
-=======
   .benefit-h3 {
-    --color: var(--green-color);
+    --color: var(--accent-text);
   }
->>>>>>> 8c5a94d923034db8e976e1cdaf042fe62e9f440a
 }
 
 /* Space between image and text */
@@ -85,19 +79,11 @@
 .benefit-h3 {
   --color: var(--text-color-3);
 
-<<<<<<< HEAD
-    color: var(--color);
-    margin-bottom: 10px;
-    -webkit-transition: var(--transition);
-    -o-transition: var(--transition);
-    transition: var(--transition);
-=======
   color: var(--color);
-  margin-bottom: var(--h3-bottom-margin);
+  margin-bottom: 10px;
   -webkit-transition: var(--transition);
   -o-transition: var(--transition);
   transition: var(--transition);
->>>>>>> 8c5a94d923034db8e976e1cdaf042fe62e9f440a
 }
 
 /* Paragraph font-size */
