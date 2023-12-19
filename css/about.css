@@ -1,50 +1,50 @@
 #about {
-    --padding-top: 100px;
+  --padding-top: 100px;
 
-    padding-top: var(--padding-top);
+  padding-top: var(--padding-top);
 }
 
 /* About cards container */
 .about-cards-row {
-    -ms-flex-line-pack: center;
-        align-content: center;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    gap: 30px;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  gap: 30px;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
-
 
 /* Div that builds the card and has the background image */
 .about-card {
-    --shadow: none;
-    --height: 225px;
-    --max-width: 400px;
-    --width: 100%;
+  --shadow: none;
+  --height: 225px;
+  --max-width: 400px;
+  --width: 100%;
 
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    border-radius: 10px;
-    -webkit-box-shadow: var(--shadow);
-            box-shadow: var(--shadow);
-    height: var(--height);
-    max-width: var(--max-width);
-    min-width: 250px;
-    overflow: hidden;
-    position: relative;
-    -webkit-transition: var(--transition);
-    -o-transition: var(--transition);
-    transition: var(--transition);
-    width: var(--width);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 10px;
+  -webkit-box-shadow: var(--shadow);
+  box-shadow: var(--shadow);
+  height: var(--height);
+  max-width: var(--max-width);
+  min-width: 250px;
+  overflow: hidden;
+  position: relative;
+  -webkit-transition: var(--transition);
+  -o-transition: var(--transition);
+  transition: var(--transition);
+  width: var(--width);
 }
 
 .about-card-1 {
+<<<<<<< HEAD
     background-image: -webkit-gradient(linear, left top, left bottom, from(var(--gradient-70)), to(var(--gradient-70))), url("../images/about/about_image_1.webp");
     background-image: -o-linear-gradient(var(--gradient-70), var(--gradient-70)), url("../images/about/about_image_1.webp");
     background-image: linear-gradient(var(--gradient-70), var(--gradient-70)), url("../images/about/about_image_1.webp");
@@ -78,115 +78,230 @@
     background-image: -webkit-gradient(linear, left top, left bottom, from(var(--gradient-70)), to(var(--gradient-70))), url("../images/about/about_image_6.webp");
     background-image: -o-linear-gradient(var(--gradient-70), var(--gradient-70)), url("../images/about/about_image_6.webp");
     background-image: linear-gradient(var(--gradient-70), var(--gradient-70)), url("../images/about/about_image_6.webp");
+=======
+  background-image: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      from(var(--gradient-about-card)),
+      to(var(--gradient-about-card))
+    ),
+    url("../images/about/about_image_1.webp");
+  background-image: -o-linear-gradient(
+      var(--gradient-about-card),
+      var(--gradient-about-card)
+    ),
+    url("../images/about/about_image_1.webp");
+  background-image: linear-gradient(
+      var(--gradient-about-card),
+      var(--gradient-about-card)
+    ),
+    url("../images/about/about_image_1.webp");
+}
+
+.about-card-2 {
+  background-image: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      from(var(--gradient-about-card)),
+      to(var(--gradient-about-card))
+    ),
+    url("../images/about/about_image_2.webp");
+  background-image: -o-linear-gradient(
+      var(--gradient-about-card),
+      var(--gradient-about-card)
+    ),
+    url("../images/about/about_image_2.webp");
+  background-image: linear-gradient(
+      var(--gradient-about-card),
+      var(--gradient-about-card)
+    ),
+    url("../images/about/about_image_2.webp");
+}
+
+.about-card-3 {
+  background-image: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      from(var(--gradient-about-card)),
+      to(var(--gradient-about-card))
+    ),
+    url("../images/about/about_image_3.webp");
+  background-image: -o-linear-gradient(
+      var(--gradient-about-card),
+      var(--gradient-about-card)
+    ),
+    url("../images/about/about_image_3.webp");
+  background-image: linear-gradient(
+      var(--gradient-about-card),
+      var(--gradient-about-card)
+    ),
+    url("../images/about/about_image_3.webp");
+}
+
+.about-card-4 {
+  background-image: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      from(var(--gradient-about-card)),
+      to(var(--gradient-about-card))
+    ),
+    url("../images/about/about_image_4.webp");
+  background-image: -o-linear-gradient(
+      var(--gradient-about-card),
+      var(--gradient-about-card)
+    ),
+    url("../images/about/about_image_4.webp");
+  background-image: linear-gradient(
+      var(--gradient-about-card),
+      var(--gradient-about-card)
+    ),
+    url("../images/about/about_image_4.webp");
+}
+
+.about-card-5 {
+  background-image: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      from(var(--gradient-about-card)),
+      to(var(--gradient-about-card))
+    ),
+    url("../images/about/about_image_5.webp");
+  background-image: -o-linear-gradient(
+      var(--gradient-about-card),
+      var(--gradient-about-card)
+    ),
+    url("../images/about/about_image_5.webp");
+  background-image: linear-gradient(
+      var(--gradient-about-card),
+      var(--gradient-about-card)
+    ),
+    url("../images/about/about_image_5.webp");
+}
+
+.about-card-6 {
+  background-image: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      from(var(--gradient-about-card)),
+      to(var(--gradient-about-card))
+    ),
+    url("../images/about/about_image_6.webp");
+  background-image: -o-linear-gradient(
+      var(--gradient-about-card),
+      var(--gradient-about-card)
+    ),
+    url("../images/about/about_image_6.webp");
+  background-image: linear-gradient(
+      var(--gradient-about-card),
+      var(--gradient-about-card)
+    ),
+    url("../images/about/about_image_6.webp");
+>>>>>>> 8c5a94d923034db8e976e1cdaf042fe62e9f440a
 }
 
 /* When about card gets hovered*/
 .about-card:hover,
 .about-card-hover {
-    --shadow: var(--box-shadow);
+  --shadow: var(--box-shadow);
 
-    scale: 1.03;
+  scale: 1.03;
 
-    .about-card-title {
-        opacity: 0;
-        visibility: 0;
-    }
+  .about-card-title {
+    opacity: 0;
+    visibility: 0;
+  }
 
-    .about-card-paragraph {
-        opacity: 1;
-        visibility: 1;
-    }
+  .about-card-paragraph {
+    opacity: 1;
+    visibility: 1;
+  }
 }
 
 /* Makes the background image be blured */
 .about-card-paragraph {
-    -webkit-backdrop-filter: blur(10px);
-            backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
 }
 
 /* Alings the text, sets the transition and size of the inner divs of the about cards */
 .about-card-title,
 .about-card-paragraph {
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    height: 100%;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    padding: 15px 15px;
-    position: absolute;
-    text-align: center;
-    -webkit-transition: var(--transition);
-    -o-transition: var(--transition);
-    transition: var(--transition);
-    width: 100%;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding: 15px 15px;
+  position: absolute;
+  text-align: center;
+  -webkit-transition: var(--transition);
+  -o-transition: var(--transition);
+  transition: var(--transition);
+  width: 100%;
 }
 
 /* About card title */
 .about-card .h5 {
-    color: var(--text-color-1);
+  color: var(--text-color-1);
 }
 
 /* About card paragraph */
 .about-card .p {
-    --font-size: 15px;
+  --font-size: 15px;
 
-    color: var(--text-color-2);
-    font-size: var(--font-size);
+  color: var(--text-color-2);
+  font-size: var(--font-size);
 }
 
 .about-card-paragraph {
-    opacity: 0;
-    visibility: 0;
+  opacity: 0;
+  visibility: 0;
 }
 
 /* Devices above or equal to 680px wide */
 @media (min-width: 680px) {
-
-    .about-card {
-        --max-width: 100%;
-        --width: 300px;
-    }
-
+  .about-card {
+    --max-width: 100%;
+    --width: 300px;
+  }
 }
 
 /* Devices above 800px wide */
 @media (min-width: 801px) {
-
-    .about-card {
-        --width: 325px;
-    }
-
+  .about-card {
+    --width: 325px;
+  }
 }
 
 /* Devices above 950px wide */
 @media (min-width: 951px) {
-
-    .about-card {
-        --height: 210px;
-    }
-
+  .about-card {
+    --height: 210px;
+  }
 }
 
 /* Devices above 950px wide */
 @media (min-width: 1201px) {
-
-    .about-card {
-        --width: 360px;
-    }
-
+  .about-card {
+    --width: 360px;
+  }
 }
 
 /* Devices above 950px wide */
 @media (min-width: 1401px) {
-
-    .about-card {
-        --height: 250px;
-        --width: 400px;
-    }
-
+  .about-card {
+    --height: 250px;
+    --width: 400px;
+  }
 }

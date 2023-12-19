@@ -1,28 +1,42 @@
 /* Google fonts link */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap");
 
 :root {
+<<<<<<< HEAD
 
   --surface-1-light: #F5F5F7;
   --surface-2-light: #E8E8E8;
+=======
+  --green-color: #008037;
+
+  --surface-1-light: #f5f5f7;
+  --surface-2-light: #e8e8e8;
+>>>>>>> 8c5a94d923034db8e976e1cdaf042fe62e9f440a
 
   --surface-1-dark: #161616;
-  --surface-2-dark: #1E1E1E;
+  --surface-2-dark: #1e1e1e;
 
-  --text-1-white: #F5F5F7;
-  --text-2-white: #E8E8E8;
+  --text-1-white: #f5f5f7;
+  --text-2-white: #e8e8e8;
 
   --text-1-black: #161616;
-  --text-2-black: #1E1E1E;
+  --text-2-black: #1e1e1e;
 
-  --font-family: 'Poppins', sans-serif;
+  --font-family: "Poppins", sans-serif;
 
   --accent-text: #008037;
   --accent-background: #008037;
 
+<<<<<<< HEAD
 
   --bg-hover-btn: #1E1E1E;
   --text-color-hover-btn: #E8E8E8;
+=======
+  --dark-hover-btn: #1e1e1e;
+  --light-hover-btn: #e8e8e8;
+  --light-text-color-hover-btn: #e8e8e8;
+  --dark-text-color-hover-btn: #1e1e1e;
+>>>>>>> 8c5a94d923034db8e976e1cdaf042fe62e9f440a
 
   --bg-1: var(--surface-1-light);
   --bg-2: var(--surface-2-light);
@@ -40,7 +54,12 @@
   --gradient-75: rgba(22, 22, 22, 0.75);
   --gradient-70: rgba(22, 22, 22, 0.70);
 
+<<<<<<< HEAD
   --active-navbar-text: #1E1E1E;
+=======
+  --navbar-blured-bg: rgba(245, 245, 247, 0.8);
+  --navbar-active-text: #1e1e1e;
+>>>>>>> 8c5a94d923034db8e976e1cdaf042fe62e9f440a
 
   --home-hover-btn-background: #E8E8E8;
   --home-hover-btn-text: #1E1E1E;
@@ -51,7 +70,6 @@
 
   /* Dark mode */
   @media (prefers-color-scheme: dark) {
-
     --bg-1: var(--surface-1-dark);
     --bg-2: var(--surface-2-dark);
 
@@ -63,13 +81,23 @@
 
     --gradient-80: rgba(22, 22, 22, 0.8);
 
+<<<<<<< HEAD
     --active-navbar-text: #E8E8E8;
+=======
+    --navbar-blured-bg: rgba(22, 22, 22, 0.8);
+    --navbar-active-text: #e8e8e8;
+>>>>>>> 8c5a94d923034db8e976e1cdaf042fe62e9f440a
 
     --bg-hover-btn: #E8E8E8;
     --text-color-hover-btn: #1E1E1E;
 
-  }
+<<<<<<< HEAD
+=======
+    --sing-up-border: rgba(232, 232, 232, 0.3);
 
+    --input-border: rgba(232, 232, 232, 0.3);
+>>>>>>> 8c5a94d923034db8e976e1cdaf042fe62e9f440a
+  }
 }
 
 /* Formating elements */
@@ -209,6 +237,10 @@ body {
   line-height: normal;
 }
 
+<<<<<<< HEAD
+=======
+/* h5 */
+>>>>>>> 8c5a94d923034db8e976e1cdaf042fe62e9f440a
 .h5 {
   --font-size: 20px;
 
@@ -267,7 +299,7 @@ body {
   background-color: var(--background, #008037);
   border: none;
   border-radius: 10px;
-  color: var(--color, #E8E8E8);
+  color: var(--color, #e8e8e8);
   font-family: var(--font-family);
   font-size: var(--font-size);
   font-weight: 400;
@@ -287,7 +319,7 @@ body {
 }
 
 /* Remove anchor tag underline */
-.navigation-link>a {
+.navigation-link > a {
   text-decoration: none;
 }
 
@@ -358,23 +390,24 @@ body {
   text-align: center;
 
   a {
+<<<<<<< HEAD
     color: var(--accent-text);
+=======
+    color: var(--green-text);
+>>>>>>> 8c5a94d923034db8e976e1cdaf042fe62e9f440a
     text-decoration: none;
   }
 }
 
 /* Devices under 376px wide */
 @media (max-width: 375px) {
-
   .form {
     --width: 100%;
   }
-
 }
 
 /* Devices above 680px wide */
 @media (min-width: 681px) {
-
   .h1 {
     --font-size: 70px;
   }
@@ -394,32 +427,25 @@ body {
   .container {
     --padding: 100px 15px 50px;
   }
-
 }
 
 /* Devices above 699px wide */
 @media (min-width: 700px) {
-
   .form {
     --width: 350px;
   }
-
 }
 
 /* Devices above 1000px wide */
 @media (min-width: 1001px) {
-
   .h4 {
     --font-size: 35px;
   }
-
 }
 
 /* Devices above 1200px wide */
 @media (min-width: 1201px) {
-
   .h3 {
     --font-size: 35px;
   }
-
 }
