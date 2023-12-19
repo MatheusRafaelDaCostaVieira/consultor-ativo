@@ -89,7 +89,6 @@
 /* Paragraph font-size */
 .benefit-p {
   color: var(--text-color-4);
-  font-size: 16px;
 }
 
 /* Devices above 900px wide */
