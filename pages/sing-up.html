@@ -1,60 +1,88 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
-<head>
-
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title>Ca - Cadastro</title>
 
-    <link rel="icon" href="../images/logo/logo.ico" type="image/x-icon">
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../css/sing-up.css">
-    <meta name="description" content="Realizar cadastro. Começe uma nova fase para você e sua empresa.">
+    <link rel="icon" href="../images/logo/logo.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/sing-up.css" />
+    <meta
+      name="description"
+      content="Realizar cadastro. Começe uma nova fase para você e sua empresa."
+    />
+  </head>
 
-</head>
-
-<body>
-
+  <body>
     <section id="sing-up">
-        <div class="sing-up-left">
-            <h2 class="h1 hide-before-load">Consutor <span>ativo</span></h2>
-            <p class="p sing-up-p hide-before-load">Acompanhando seu crescimento.</p>
-        </div>
-        <div class="sing-up-right">
-            <a href="../index.html" class="sing-up-logo hide-before-load">
-                <img src="../images/logo/logo.svg" alt="Voltar para a tela principal." class="logo">
-            </a>
-            <form action="" class="form hide-before-load">
-                <ul class="form-ul">
-                    <li>
-                        <input type="text" id="name" name="user_name" placeholder="Teste" class="form-text-input input" required/>
-                    </li>
-                    <li>
-                        <input type="password" id="name" name="user_name" placeholder="Senha" class="form-text-input input" required/>
-                    </li>
-                    <li>
-                        <textarea name="" id="" rows="3" placeholder="Quais são seus interesses?" class="form-textarea input" required></textarea>
-                    </li>
-                    <li class="form-select-button">
-                        <select id="card" name="usercard" class="form-select" required>
-                            <option value="none" selected disabled hidden>Selecionar plano</option>
-                            <option value="bronze">Plano Bronze</option>
-                            <option value="prata">Plano Prata</option>
-                            <option value="gold">Plano Ouro</option>
-                          </select>
-                        <button type="submit" class="button">Cadastrar</button>
-                    </li>
-                </ul>
-            </form>
-            <p class="p form-p hide-before-load">Já tem uma conta? <a href="./login.html">Entrar</a></p>
-        </div>
+      <div class="sing-up-left">
+        <h2 class="h1 hide-before-load">Consutor <span>ativo</span></h2>
+        <p class="p sing-up-p hide-before-load">
+          Acompanhando seu crescimento.
+        </p>
+      </div>
+      <div class="sing-up-right">
+        <a href="../index.html" class="sing-up-logo hide-before-load">
+          <img
+            src="../images/logo/logo.svg"
+            alt="Voltar para a tela principal."
+            class="logo"
+          />
+        </a>
+        <form action="" class="form hide-before-load">
+          <ul class="form-ul">
+            <li>
+              <input
+                type="text"
+                id="name"
+                name="user_name"
+                placeholder="Teste"
+                class="form-text-input input"
+                required
+              />
+            </li>
+            <li>
+              <input
+                type="password"
+                id="name"
+                name="user_name"
+                placeholder="Senha"
+                class="form-text-input input"
+                required
+              />
+            </li>
+            <li>
+              <textarea
+                name=""
+                id=""
+                rows="3"
+                placeholder="Quais são seus interesses?"
+                class="form-textarea input"
+                required
+              ></textarea>
+            </li>
+            <li class="form-select-button">
+              <select id="card" name="usercard" class="form-select" required>
+                <option value="none" selected disabled hidden>
+                  Selecionar plano
+                </option>
+                <option value="bronze">Plano Bronze</option>
+                <option value="prata">Plano Prata</option>
+                <option value="gold">Plano Ouro</option>
+              </select>
+              <button type="submit" class="button">Cadastrar</button>
+            </li>
+          </ul>
+        </form>
+        <p class="p form-p hide-before-load">
+          Já tem uma conta? <a href="./login.html">Entrar</a>
+        </p>
+      </div>
     </section>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="../js/index.js"></script>
-
-</body>
-
+  </body>
 </html>

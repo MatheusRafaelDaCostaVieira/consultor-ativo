@@ -1,30 +1,29 @@
 /* Google fonts link */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap");
 
 :root {
-
   --green-color: #008037;
 
-  --surface-1-light: #F5F5F7;
-  --surface-2-light: #E8E8E8;
+  --surface-1-light: #f5f5f7;
+  --surface-2-light: #e8e8e8;
 
   --surface-1-dark: #161616;
-  --surface-2-dark: #1E1E1E;
+  --surface-2-dark: #1e1e1e;
 
-  --text-1-white: #F5F5F7;
-  --text-2-white: #E8E8E8;
+  --text-1-white: #f5f5f7;
+  --text-2-white: #e8e8e8;
 
   --text-1-black: #161616;
-  --text-2-black: #1E1E1E;
+  --text-2-black: #1e1e1e;
 
-  --font-family: 'Poppins', sans-serif;
+  --font-family: "Poppins", sans-serif;
 
   --brand-color: var(--green-color);
 
-  --dark-hover-btn: #1E1E1E;
-  --light-hover-btn: #E8E8E8;
-  --light-text-color-hover-btn: #E8E8E8;
-  --dark-text-color-hover-btn: #1E1E1E;
+  --dark-hover-btn: #1e1e1e;
+  --light-hover-btn: #e8e8e8;
+  --light-text-color-hover-btn: #e8e8e8;
+  --dark-text-color-hover-btn: #1e1e1e;
 
   --bg-1: var(--surface-1-light);
   --bg-2: var(--surface-2-light);
@@ -43,7 +42,7 @@
   --text-color-hover-btn: var(--light-text-color-hover-btn);
 
   --navbar-blured-bg: rgba(245, 245, 247, 0.8);
-  --navbar-active-text: #1E1E1E;
+  --navbar-active-text: #1e1e1e;
 
   --gradient-home-bg: rgba(22, 22, 22, 0.75);
   --gradient-about-card: rgba(22, 22, 22, 0.7);
@@ -64,7 +63,6 @@
 
   /* Dark mode */
   @media (prefers-color-scheme: dark) {
-
     --bg-1: var(--surface-1-dark);
     --bg-2: var(--surface-2-dark);
 
@@ -77,16 +75,15 @@
     --text-color-hover-btn: var(--dark-text-color-hover-btn);
 
     --navbar-blured-bg: rgba(22, 22, 22, 0.8);
-    --navbar-active-text: #E8E8E8;
+    --navbar-active-text: #e8e8e8;
 
     --plan-card-border: rgba(232, 232, 232, 0.3);
     --plan-card-inside-border: rgba(232, 232, 232, 0.3);
 
-    --sing-up-border: rgba(232, 232, 232, 0.3);    
+    --sing-up-border: rgba(232, 232, 232, 0.3);
 
     --input-border: rgba(232, 232, 232, 0.3);
   }
-
 }
 
 /* Formating elements */
@@ -229,7 +226,6 @@ body {
   line-height: normal;
 }
 
-
 /* h5 */
 .h5 {
   --font-size: 20px;
@@ -263,8 +259,8 @@ body {
   height: auto;
   max-width: 1300px;
   padding: var(--padding);
-  width: 100vw;  
-  
+  width: 100vw;
+
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
@@ -290,7 +286,7 @@ body {
   background-color: var(--background, #008037);
   border: none;
   border-radius: 10px;
-  color: var(--color, #E8E8E8);
+  color: var(--color, #e8e8e8);
   font-family: var(--font-family);
   font-size: var(--font-size);
   font-weight: 400;
@@ -310,7 +306,7 @@ body {
 }
 
 /* Remove anchor tag underline */
-.navigation-link>a {
+.navigation-link > a {
   text-decoration: none;
 }
 
@@ -361,40 +357,37 @@ body {
   text-align: center;
 
   li {
-      margin-bottom: 40px;
+    margin-bottom: 40px;
   }
 
   li:last-child {
-      margin-bottom: 0;
+    margin-bottom: 0;
   }
 }
 
 .form-p {
   bottom: 0;
   color: var(--text-color-4);
-  font-size: 16px;       
+  font-size: 16px;
   position: absolute;
   margin-bottom: 15px;
   text-align: center;
 
   a {
-      color: var(--green-text);
-      text-decoration: none;
+    color: var(--green-text);
+    text-decoration: none;
   }
 }
 
 /* Devices under 375px wide */
 @media (max-width: 375px) {
-
   .form {
-      --width: 100%;
+    --width: 100%;
   }
-
 }
 
 /* Devices above 680px wide */
 @media (min-width: 681px) {
-
   .h1 {
     --font-size: 70px;
   }
@@ -414,32 +407,25 @@ body {
   .container {
     --padding: 100px 15px 50px;
   }
-
 }
 
 /* Devices above 700px wide */
 @media (min-width: 700px) {
-
   .form {
-      --width: 350px;
+    --width: 350px;
   }
-
 }
 
 /* Devices above 1000px wide */
 @media (min-width: 1001px) {
-
   .h4 {
     --font-size: 35px;
   }
-
 }
 
 /* Devices above 1200px wide */
 @media (min-width: 1201px) {
-
   .h3 {
     --font-size: 35px;
   }
-
 }

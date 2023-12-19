@@ -1,59 +1,57 @@
 #menu {
-    --left: -100%;
+  --left: -100%;
 
-    bottom: 0;
-    height: 1;
-    left: var(--left);
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    position: fixed;
-    -webkit-transition: var(--transition);
-    -o-transition: var(--transition);
-    transition: var(--transition);
-    z-index: 100;
+  bottom: 0;
+  height: 1;
+  left: var(--left);
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  position: fixed;
+  -webkit-transition: var(--transition);
+  -o-transition: var(--transition);
+  transition: var(--transition);
+  z-index: 100;
 }
 
 /* Class that shows the menu */
 #menu.active-menu {
-    --left: 0;
+  --left: 0;
 }
 
 /* Div that contains the menu ul */
 .menu-container {
-    background-color: var(--bg-1);
-    height: 100vh;
-    max-width: 500px;
-    padding: 170px 25px 0;
-    width: 100vw;
+  background-color: var(--bg-1);
+  height: 100vh;
+  max-width: 500px;
+  padding: 170px 25px 0;
+  width: 100vw;
 }
 
 /* The ul that contains the navbar navigation links */
 .menu-links {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    gap: 32px;
-    list-style: none;
-    text-align: left;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  gap: 32px;
+  list-style: none;
+  text-align: left;
 }
 
 /* Menu links color and size */
 .menu-links .navigation-link p {
-    --font-size: 24px;
+  --font-size: 24px;
 
-    color: var(--text-color-4);
+  color: var(--text-color-4);
 }
 
 @media (min-width: 901px) {
-
-    /* Hidding the menu button */
-    #menu {
-        display: none;
-    }
-
+  /* Hidding the menu button */
+  #menu {
+    display: none;
+  }
 }

@@ -1,268 +1,270 @@
 #home {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(var(--gradient-home-bg)), to(var(--gradient-home-bg))), url("../images/backgrounds/home_background.webp");
-    background-image: -o-linear-gradient(var(--gradient-home-bg), var(--gradient-home-bg)), url("../images/backgrounds/home_background.webp");
-    background-image: linear-gradient(var(--gradient-home-bg), var(--gradient-home-bg)), url("../images/backgrounds/home_background.webp");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 70vh;
-    max-height: 900px;
-    max-width: 2560px;
-    min-height: 600px;
-    padding: 0 5px;
-    width: 100%;
+  background-image: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      from(var(--gradient-home-bg)),
+      to(var(--gradient-home-bg))
+    ),
+    url("../images/backgrounds/home_background.webp");
+  background-image: -o-linear-gradient(
+      var(--gradient-home-bg),
+      var(--gradient-home-bg)
+    ),
+    url("../images/backgrounds/home_background.webp");
+  background-image: linear-gradient(
+      var(--gradient-home-bg),
+      var(--gradient-home-bg)
+    ),
+    url("../images/backgrounds/home_background.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 70vh;
+  max-height: 900px;
+  max-width: 2560px;
+  min-height: 600px;
+  padding: 0 5px;
+  width: 100%;
 }
 
 /* Navbar properties */
 .navbar {
-    --background: transparent;
-    --blur: 0;
-    --padding: 0 15px 0 25px;
+  --background: transparent;
+  --blur: 0;
+  --padding: 0 15px 0 25px;
 
-    -webkit-backdrop-filter: blur(var(--blur));
+  -webkit-backdrop-filter: blur(var(--blur));
 
-            backdrop-filter: blur(var(--blur));
-    background-color: var(--background);
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    left: 0;
-    padding: var(--padding);
-    position: fixed;
-    top: 0;
-    -webkit-transition: var(--transition);
-    -o-transition: var(--transition);
-    transition: var(--transition);
-    width: 100vw;
-    z-index: 1000;
+  backdrop-filter: blur(var(--blur));
+  background-color: var(--background);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  left: 0;
+  padding: var(--padding);
+  position: fixed;
+  top: 0;
+  -webkit-transition: var(--transition);
+  -o-transition: var(--transition);
+  transition: var(--transition);
+  width: 100vw;
+  z-index: 1000;
 }
 
 /* Active navbar */
 .active-navbar {
-    --background: var(--navbar-blured-bg);
-    --blur: 20px;
+  --background: var(--navbar-blured-bg);
+  --blur: 20px;
 
-    .navbar-content {
-        --height: 70px;
-    }
+  .navbar-content {
+    --height: 70px;
+  }
 
-    /* Navigation links color */
-    .navigation-link p {
-        --color: var(--navbar-active-text);
-    }
+  /* Navigation links color */
+  .navigation-link p {
+    --color: var(--navbar-active-text);
+  }
 
-    /* Menu bars color */
-    .menu-bar {
-        --bg-color: var(--text-color-4);
-    }
-
+  /* Menu bars color */
+  .menu-bar {
+    --bg-color: var(--text-color-4);
+  }
 }
 
 /* This stop the navbar content from stretch itself to more than 1920px */
 .navbar-content {
-    --height: 80px;
+  --height: 80px;
 
-    -webkit-box-align: center;
+  -webkit-box-align: center;
 
-        -ms-flex-align: center;
+  -ms-flex-align: center;
 
-            align-items: center;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    height: var(--height);
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    max-width: 1200px;
-    -webkit-transition: var(--transition);
-    -o-transition: var(--transition);
-    transition: var(--transition);
-    width: 100%;
+  align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: var(--height);
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  max-width: 1200px;
+  -webkit-transition: var(--transition);
+  -o-transition: var(--transition);
+  transition: var(--transition);
+  width: 100%;
 }
 
 .header {
-    --gap: 0px;
+  --gap: 0px;
 
-    -webkit-box-align: center;
+  -webkit-box-align: center;
 
-        -ms-flex-align: center;
+  -ms-flex-align: center;
 
-            align-items: center;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    gap: var(--gap);
-    height: 100%;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    text-align: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  gap: var(--gap);
+  height: 100%;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  text-align: center;
 }
 
 /* Hamburguer menu button */
 .menu-button {
-    --background: transparent;
+  --background: transparent;
 
-    background-color: var(--background);
-    border: none;
-    border-radius: 10px;
-    padding: 10px;
-    -webkit-transition: var(--transition);
-    -o-transition: var(--transition);
-    transition: var(--transition);
+  background-color: var(--background);
+  border: none;
+  border-radius: 10px;
+  padding: 10px;
+  -webkit-transition: var(--transition);
+  -o-transition: var(--transition);
+  transition: var(--transition);
 }
 
 /* Menu bars div */
 .menu-icon {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    gap: 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  gap: 8px;
 }
 
 /* Hamburguer menu bars */
 .menu-bar {
-    --bg-color: var(--text-color-2);
+  --bg-color: var(--text-color-2);
 
-    background-color: var(--bg-color);
-    border-radius: 5px;
-    width: 40px;
-    height: 4px;
+  background-color: var(--bg-color);
+  border-radius: 5px;
+  width: 40px;
+  height: 4px;
 }
 
 /* Paragraph color and size */
 .home-p {
-    --font-size: 16px;
-    --margin-bottom: 50px;
+  --font-size: 16px;
+  --margin-bottom: 50px;
 
-    color: var(--text-color-2);
-    font-size: 16px;
-    margin-bottom: var(--margin-bottom);
+  color: var(--text-color-2);
+  font-size: 16px;
+  margin-bottom: var(--margin-bottom);
 }
 
 .home-button:hover,
 .home-button:active {
-    --background: var(--light-hover-btn);
-    --color: var(--dark-text-color-hover-btn);
+  --background: var(--light-hover-btn);
+  --color: var(--dark-text-color-hover-btn);
 }
 
 /* Navbar ul */
 .navbar-links {
-    display: none;
-    gap: 32px;
-    list-style: none;
+  display: none;
+  gap: 32px;
+  list-style: none;
 }
 
 /* When menu gets open, navbar change it's styles */
 .active-menu-navbar {
+  --background: transparent;
+  --blur: none;
 
-    --background: transparent;
-    --blur: none;
+  .menu-button {
+    --background: var(--bg-1);
+  }
 
-    .menu-button {
-        --background: var(--bg-1);
-    }
-
-    .menu-bar {
-        --bg-color: var(--text-color-4);
-    }
-
+  .menu-bar {
+    --bg-color: var(--text-color-4);
+  }
 }
 
 /* Devices under 350px wide */
-@media(max-width: 350px) {
+@media (max-width: 350px) {
+  .h1 {
+    --font-size: 45px;
+  }
 
-    .h1 {
-        --font-size: 45px;
-    }
+  .button {
+    --font-size: 14px;
+  }
 
-    .button {
-        --font-size: 14px;
-    }
-
-    .home-p {
-        --font-size: 14px;
-    }
-
+  .home-p {
+    --font-size: 14px;
+  }
 }
 
 /* Devices above 680px wide */
 @media (min-width: 681px) {
+  /* Make the home section stop at 700px height */
+  #home {
+    height: 100vh;
+    max-height: 700px;
+  }
 
-    /* Make the home section stop at 700px height */
-    #home {
-        height: 100vh;
-        max-height: 700px;
-    }
+  .navbar {
+    --padding: 0 35px;
+  }
 
-    .navbar {
-        --padding: 0 35px;
-    }
+  .header {
+    --gap: 15px;
+  }
 
-    .header {
-        --gap: 15px;
-    }
-
-    .home-p {
-        --margin-bottom: 15px;
-    }
-
+  .home-p {
+    --margin-bottom: 15px;
+  }
 }
 
 /* Devices above 900px wide */
 @media (min-width: 901px) {
+  /* Hide menu button */
+  .menu-button {
+    display: none;
+  }
 
+  /* Show navbar links */
+  .navbar-links {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 
-    /* Hide menu button */
-    .menu-button {
-        display: none;
+  .active-menu-navbar {
+    --background: var(--navbar-blured-bg);
+
+    .menu-bar {
+      --bg-color: var(--text-color-4);
     }
-
-    /* Show navbar links */
-    .navbar-links {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-    }
-
-    .active-menu-navbar {
-        --background: var(--navbar-blured-bg);
-
-        .menu-bar {
-            --bg-color: var(--text-color-4);
-        }
-    }
-
+  }
 }
 
 /* Devices above 1000px wide */
 @media (min-width: 1001px) {
+  .logo {
+    --width: 35px;
+  }
+
+  .active-navbar {
+    .navbar-content {
+      --height: 45px;
+    }
 
     .logo {
-        --width: 35px;
+      --width: 30px;
     }
-
-    .active-navbar {
-
-        .navbar-content {
-            --height: 45px;
-        }
-
-        .logo {
-            --width: 30px;
-        }
-    }
-
+  }
 }

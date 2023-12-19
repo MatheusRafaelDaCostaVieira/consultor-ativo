@@ -1,141 +1,137 @@
 /* Div that contains all the benefits cards */
 .benefits-row {
-    --gap: 80px;
+  --gap: 80px;
 
-    -webkit-box-align: center;
+  -webkit-box-align: center;
 
-        -ms-flex-align: center;
+  -ms-flex-align: center;
 
-            align-items: center;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    gap: var(--gap);
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  gap: var(--gap);
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 /* Image, title and paragraph container */
 .benefits-card {
-    --flex-direction: column;
-    --text-aling: center;
-    --width: 100%;
+  --flex-direction: column;
+  --text-aling: center;
+  --width: 100%;
 
-    -webkit-box-align: center;
+  -webkit-box-align: center;
 
-        -ms-flex-align: center;
+  -ms-flex-align: center;
 
-            align-items: center;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: var(--flex-direction);
-            flex-direction: var(--flex-direction);
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    max-width: 1200px;
-    text-align: var(--text-aling);
-    width: var(--width);
+  align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: var(--flex-direction);
+  flex-direction: var(--flex-direction);
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  max-width: 1200px;
+  text-align: var(--text-aling);
+  width: var(--width);
 }
 
 .benefits-card:hover {
-    .benefit-h3 {
-        --color: var(--green-color);
-    }
+  .benefit-h3 {
+    --color: var(--green-color);
+  }
 }
 
 /* Space between image and text */
 .benefit-card-items-space {
-    -webkit-box-flex: 1;
-        -ms-flex: 1 0 30px;
-            flex: 1 0 30px;
+  -webkit-box-flex: 1;
+  -ms-flex: 1 0 30px;
+  flex: 1 0 30px;
 }
 
 /* Benefit card image */
 .benefit-image {
-    --height: 230px;
-    --width: 230px;
+  --height: 230px;
+  --width: 230px;
 
-    height: var(--height);
-    -o-object-fit: cover;
-       object-fit: cover;
-    width: var(--width);
+  height: var(--height);
+  -o-object-fit: cover;
+  object-fit: cover;
+  width: var(--width);
 }
 
 /* Max width for the text grow */
 .benefit-text {
-    max-width: 700px;
+  max-width: 700px;
 }
 
 /* Margin under h3 */
 .benefit-h3 {
-    --color: var(--text-color-3);
+  --color: var(--text-color-3);
 
-    color: var(--color);
-    margin-bottom: var(--h3-bottom-margin);
-    -webkit-transition: var(--transition);
-    -o-transition: var(--transition);
-    transition: var(--transition);
+  color: var(--color);
+  margin-bottom: var(--h3-bottom-margin);
+  -webkit-transition: var(--transition);
+  -o-transition: var(--transition);
+  transition: var(--transition);
 }
 
 /* Paragraph font-size */
 .benefit-p {
-    color: var(--text-color-4);
-    font-size: 16px;
+  color: var(--text-color-4);
+  font-size: 16px;
 }
 
 /* Devices above 900px wide */
 @media (min-width: 901px) {
+  .benefits-row {
+    --gap: 50px;
+  }
 
-    .benefits-row {
-        --gap: 50px;
-    }
+  /* Make card content sit alongside others */
+  .benefits-card {
+    --flex-direction: row;
+    --text-aling: left;
+    --width: 80vw;
+  }
 
-    /* Make card content sit alongside others */
-    .benefits-card {
-        --flex-direction: row;
-        --text-aling: left;
-        --width: 80vw;
-    }
-
-    /* Invert image position of even cards */
-    .benefits-card:nth-of-type(even) {
-        .benefit-image {
-            -webkit-box-ordinal-group: 3;
-                -ms-flex-order: 2;
-                    order: 2;
-        }
-
-        .benefit-card-items-space {
-            -webkit-box-ordinal-group: 2;
-                -ms-flex-order: 1;
-                    order: 1;
-        }
-    }
-
-    /* Changing image size */
+  /* Invert image position of even cards */
+  .benefits-card:nth-of-type(even) {
     .benefit-image {
-        --height: 280px;
-        --width: 280px;
+      -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+      order: 2;
     }
 
+    .benefit-card-items-space {
+      -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+      order: 1;
+    }
+  }
+
+  /* Changing image size */
+  .benefit-image {
+    --height: 280px;
+    --width: 280px;
+  }
 }
 
 /* Devices above 1200px wide */
 @media (min-width: 1201px) {
-
-    /* Changing image size */
-    .benefit-image {
-        --height: 350px;
-        --width: 350px;
-    }
-
+  /* Changing image size */
+  .benefit-image {
+    --height: 350px;
+    --width: 350px;
+  }
 }
