@@ -19,6 +19,7 @@
 /* Card content container */
 .plan-card {
   --background: transparent;
+  --card-border: 1px solid var(--border);
   --height: 430px;
   --min-height: 100%;
   --min-width: 250px;
@@ -28,7 +29,7 @@
 
   align-items: center;
   background-color: var(--background);
-  border: 1px solid var(--plan-card-border);
+  border: var(--card-border);
   border-radius: 10px;
   box-shadow: var(--shadow);
   display: -webkit-box;
@@ -44,35 +45,6 @@
   transition: var(--transition);
   width: var(--width);
 
-<<<<<<< HEAD
-
-    align-items: center;
-    background-color: var(--background);
-    border: 1px solid var(--border);
-    border-radius: 10px;
-    box-shadow: var(--shadow);
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    flex-direction: column;
-    height: var(--height);
-    min-height: var(--min-height);
-    min-width: var(--min-width);
-    max-width: var(--max-width);
-    padding-bottom: 30px;
-    overflow: hidden;
-    transition: var(--transition);
-    width: var(--width);
-
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    -webkit-box-shadow: var(--shadow);
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    -webkit-transition: var(--transition);
-    -o-transition: var(--transition);
-=======
   -webkit-box-align: center;
   -ms-flex-align: center;
   -webkit-box-shadow: var(--shadow);
@@ -81,7 +53,6 @@
   -ms-flex-direction: column;
   -webkit-transition: var(--transition);
   -o-transition: var(--transition);
->>>>>>> 8c5a94d923034db8e976e1cdaf042fe62e9f440a
 }
 
 .plan-card:hover {
@@ -91,20 +62,13 @@
 }
 
 .plan-h5 {
-<<<<<<< HEAD
-    --background: transparent;
-    --border-color: var(--border);
-    --color: var(--text-color-3);
-    --margin-bottom: 30px;
-=======
   --background: transparent;
-  --border-color: var(--plan-card-inside-border);
+  --title-border: 1px solid var(--border);
   --color: var(--text-color-3);
   --margin-bottom: 30px;
->>>>>>> 8c5a94d923034db8e976e1cdaf042fe62e9f440a
 
   background-color: var(--background);
-  border-bottom: 1px solid var(--border-color);
+  border-bottom: var(--title-border);
   color: var(--color);
   margin-bottom: var(--margin-bottom);
   padding: 10px;
@@ -196,39 +160,23 @@
 
 .prata-plan-card {
   .plan-h5 {
-    --background: var(--plan-card-green-bg);
-    --border-color: none;
+    --background: var(--accent-background);
+    --border: none;
     --color: var(--text-color-1);
   }
 
-<<<<<<< HEAD
-    .plan-h5 {
-        --background: var(--accent-background);
-        --border-color: none;
-        --color: var(--text-color-1);
-    }
-
-    .plan-h4 {
-        --color: var(--accent-text);
-    }
-=======
   .plan-h4 {
-    --color: var(--plan-card-green-bg);
+    --color: var(--accent-text);
   }
->>>>>>> 8c5a94d923034db8e976e1cdaf042fe62e9f440a
 }
 
 .gold-plan-card {
-  --background: var(--plan-card-green-bg);
+  --background: var(--accent-background);
 
-<<<<<<< HEAD
-    --background: var(--accent-background);
-=======
   .plan-h5 {
-    --border-color: var(--plan-card-white-border);
+    --title-border: 1px solid var(--plan-card-white-border);
     --color: var(--text-color-1);
   }
->>>>>>> 8c5a94d923034db8e976e1cdaf042fe62e9f440a
 
   .plan-h4 {
     --color: var(--text-color-1);
