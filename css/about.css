@@ -44,58 +44,17 @@
 }
 
 .about-card-1 {
-<<<<<<< HEAD
-    background-image: -webkit-gradient(linear, left top, left bottom, from(var(--gradient-70)), to(var(--gradient-70))), url("../images/about/about_image_1.webp");
-    background-image: -o-linear-gradient(var(--gradient-70), var(--gradient-70)), url("../images/about/about_image_1.webp");
-    background-image: linear-gradient(var(--gradient-70), var(--gradient-70)), url("../images/about/about_image_1.webp");
-}
-
-.about-card-2 {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(var(--gradient-70)), to(var(--gradient-70))), url("../images/about/about_image_2.webp");
-    background-image: -o-linear-gradient(var(--gradient-70), var(--gradient-70)), url("../images/about/about_image_2.webp");
-    background-image: linear-gradient(var(--gradient-70), var(--gradient-70)), url("../images/about/about_image_2.webp");
-}
-
-.about-card-3 {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(var(--gradient-70)), to(var(--gradient-70))), url("../images/about/about_image_3.webp");
-    background-image: -o-linear-gradient(var(--gradient-70), var(--gradient-70)), url("../images/about/about_image_3.webp");
-    background-image: linear-gradient(var(--gradient-70), var(--gradient-70)), url("../images/about/about_image_3.webp");
-}
-
-.about-card-4 {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(var(--gradient-70)), to(var(--gradient-70))), url("../images/about/about_image_4.webp");
-    background-image: -o-linear-gradient(var(--gradient-70), var(--gradient-70)), url("../images/about/about_image_4.webp");
-    background-image: linear-gradient(var(--gradient-70), var(--gradient-70)), url("../images/about/about_image_4.webp");
-}
-
-.about-card-5 {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(var(--gradient-70)), to(var(--gradient-70))), url("../images/about/about_image_5.webp");
-    background-image: -o-linear-gradient(var(--gradient-70), var(--gradient-70)), url("../images/about/about_image_5.webp");
-    background-image: linear-gradient(var(--gradient-70), var(--gradient-70)), url("../images/about/about_image_5.webp");
-}
-
-.about-card-6 {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(var(--gradient-70)), to(var(--gradient-70))), url("../images/about/about_image_6.webp");
-    background-image: -o-linear-gradient(var(--gradient-70), var(--gradient-70)), url("../images/about/about_image_6.webp");
-    background-image: linear-gradient(var(--gradient-70), var(--gradient-70)), url("../images/about/about_image_6.webp");
-=======
   background-image: -webkit-gradient(
       linear,
       left top,
       left bottom,
-      from(var(--gradient-about-card)),
-      to(var(--gradient-about-card))
+      from(var(--gradient-70)),
+      to(var(--gradient-70))
     ),
     url("../images/about/about_image_1.webp");
-  background-image: -o-linear-gradient(
-      var(--gradient-about-card),
-      var(--gradient-about-card)
-    ),
+  background-image: -o-linear-gradient(var(--gradient-70), var(--gradient-70)),
     url("../images/about/about_image_1.webp");
-  background-image: linear-gradient(
-      var(--gradient-about-card),
-      var(--gradient-about-card)
-    ),
+  background-image: linear-gradient(var(--gradient-70), var(--gradient-70)),
     url("../images/about/about_image_1.webp");
 }
 
@@ -104,19 +63,13 @@
       linear,
       left top,
       left bottom,
-      from(var(--gradient-about-card)),
-      to(var(--gradient-about-card))
+      from(var(--gradient-70)),
+      to(var(--gradient-70))
     ),
     url("../images/about/about_image_2.webp");
-  background-image: -o-linear-gradient(
-      var(--gradient-about-card),
-      var(--gradient-about-card)
-    ),
+  background-image: -o-linear-gradient(var(--gradient-70), var(--gradient-70)),
     url("../images/about/about_image_2.webp");
-  background-image: linear-gradient(
-      var(--gradient-about-card),
-      var(--gradient-about-card)
-    ),
+  background-image: linear-gradient(var(--gradient-70), var(--gradient-70)),
     url("../images/about/about_image_2.webp");
 }
 
@@ -125,19 +78,13 @@
       linear,
       left top,
       left bottom,
-      from(var(--gradient-about-card)),
-      to(var(--gradient-about-card))
+      from(var(--gradient-70)),
+      to(var(--gradient-70))
     ),
     url("../images/about/about_image_3.webp");
-  background-image: -o-linear-gradient(
-      var(--gradient-about-card),
-      var(--gradient-about-card)
-    ),
+  background-image: -o-linear-gradient(var(--gradient-70), var(--gradient-70)),
     url("../images/about/about_image_3.webp");
-  background-image: linear-gradient(
-      var(--gradient-about-card),
-      var(--gradient-about-card)
-    ),
+  background-image: linear-gradient(var(--gradient-70), var(--gradient-70)),
     url("../images/about/about_image_3.webp");
 }
 
@@ -146,19 +93,13 @@
       linear,
       left top,
       left bottom,
-      from(var(--gradient-about-card)),
-      to(var(--gradient-about-card))
+      from(var(--gradient-70)),
+      to(var(--gradient-70))
     ),
     url("../images/about/about_image_4.webp");
-  background-image: -o-linear-gradient(
-      var(--gradient-about-card),
-      var(--gradient-about-card)
-    ),
+  background-image: -o-linear-gradient(var(--gradient-70), var(--gradient-70)),
     url("../images/about/about_image_4.webp");
-  background-image: linear-gradient(
-      var(--gradient-about-card),
-      var(--gradient-about-card)
-    ),
+  background-image: linear-gradient(var(--gradient-70), var(--gradient-70)),
     url("../images/about/about_image_4.webp");
 }
 
@@ -167,19 +108,13 @@
       linear,
       left top,
       left bottom,
-      from(var(--gradient-about-card)),
-      to(var(--gradient-about-card))
+      from(var(--gradient-70)),
+      to(var(--gradient-70))
     ),
     url("../images/about/about_image_5.webp");
-  background-image: -o-linear-gradient(
-      var(--gradient-about-card),
-      var(--gradient-about-card)
-    ),
+  background-image: -o-linear-gradient(var(--gradient-70), var(--gradient-70)),
     url("../images/about/about_image_5.webp");
-  background-image: linear-gradient(
-      var(--gradient-about-card),
-      var(--gradient-about-card)
-    ),
+  background-image: linear-gradient(var(--gradient-70), var(--gradient-70)),
     url("../images/about/about_image_5.webp");
 }
 
@@ -188,21 +123,14 @@
       linear,
       left top,
       left bottom,
-      from(var(--gradient-about-card)),
-      to(var(--gradient-about-card))
+      from(var(--gradient-70)),
+      to(var(--gradient-70))
     ),
     url("../images/about/about_image_6.webp");
-  background-image: -o-linear-gradient(
-      var(--gradient-about-card),
-      var(--gradient-about-card)
-    ),
+  background-image: -o-linear-gradient(var(--gradient-70), var(--gradient-70)),
     url("../images/about/about_image_6.webp");
-  background-image: linear-gradient(
-      var(--gradient-about-card),
-      var(--gradient-about-card)
-    ),
+  background-image: linear-gradient(var(--gradient-70), var(--gradient-70)),
     url("../images/about/about_image_6.webp");
->>>>>>> 8c5a94d923034db8e976e1cdaf042fe62e9f440a
 }
 
 /* When about card gets hovered*/
@@ -223,7 +151,7 @@
   }
 }
 
-/* Makes the background image be blured */
+/* Makes the background image blured */
 .about-card-paragraph {
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
@@ -258,10 +186,7 @@
 
 /* About card paragraph */
 .about-card .p {
-  --font-size: 15px;
-
   color: var(--text-color-2);
-  font-size: var(--font-size);
 }
 
 .about-card-paragraph {
