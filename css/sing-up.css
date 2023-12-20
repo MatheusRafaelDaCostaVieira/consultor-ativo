@@ -26,14 +26,7 @@ body {
   max-width: 2560px;
   overflow: hidden;
   width: 100%;
-
-  -ms-grid-columns: var(--grid-template-columns);
 }
-
-/* 
-Limitar a altura da div em 1080px.
-Limitar a largura da div em 2560px.
-*/
 
 .sing-up-left {
   --display: none;
@@ -43,19 +36,13 @@ Limitar a largura da div em 2560px.
       linear,
       left top,
       left bottom,
-      from(var(--gradient-sing-up-bg)),
-      to(var(--gradient-sing-up-bg))
+      from(var(--gradient-75)),
+      to(var(--gradient-75))
     ),
     url(../images/backgrounds/sing-up_background.webp);
-  background-image: -o-linear-gradient(
-      var(--gradient-sing-up-bg),
-      var(--gradient-sing-up-bg)
-    ),
+  background-image: -o-linear-gradient(var(--gradient-75), var(--gradient-75)),
     url(../images/backgrounds/sing-up_background.webp);
-  background-image: linear-gradient(
-      var(--gradient-sing-up-bg),
-      var(--gradient-sing-up-bg)
-    ),
+  background-image: linear-gradient(var(--gradient-75), var(--gradient-75)),
     url(../images/backgrounds/sing-up_background.webp);
   background-position: center;
   background-repeat: no-repeat;
@@ -107,7 +94,7 @@ Limitar a largura da div em 2560px.
 }
 
 .form-textarea.input {
-  --border: 1px solid var(--input-border);
+  --border-around: 1px solid var(--border);
 
   border-radius: 10px;
   padding: 10px;
@@ -116,7 +103,7 @@ Limitar a largura da div em 2560px.
 
 .form-select {
   background-color: var(--bg-1);
-  border: 1px solid var(--input-border);
+  border: 1px solid var(--border);
   border-radius: 10px;
   color: var(--text-color-4);
   font-family: var(--font-family);
@@ -158,10 +145,6 @@ Limitar a largura da div em 2560px.
   }
 }
 
-/* Devices above 680px wide */
-@media (min-width: 681px) {
-}
-
 /* Devices above 700px wide */
 @media (min-width: 700px) {
   .form-select-button {
@@ -174,10 +157,6 @@ Limitar a largura da div em 2560px.
 
     justify-content: space-between;
   }
-}
-
-/* Devices above 1200px wide */
-@media (min-width: 1201px) {
 }
 
 @media (min-width: 1100px) {

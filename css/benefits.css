@@ -48,7 +48,7 @@
 
 .benefits-card:hover {
   .benefit-h3 {
-    --color: var(--green-color);
+    --color: var(--accent-text);
   }
 }
 
@@ -80,7 +80,7 @@
   --color: var(--text-color-3);
 
   color: var(--color);
-  margin-bottom: var(--h3-bottom-margin);
+  margin-bottom: 10px;
   -webkit-transition: var(--transition);
   -o-transition: var(--transition);
   transition: var(--transition);
@@ -89,7 +89,6 @@
 /* Paragraph font-size */
 .benefit-p {
   color: var(--text-color-4);
-  font-size: 16px;
 }
 
 /* Devices above 900px wide */

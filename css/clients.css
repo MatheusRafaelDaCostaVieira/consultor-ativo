@@ -70,7 +70,7 @@
   }
 
   .client-h5 {
-    --color: var(--green-color);
+    --color: var(--accent-text);
   }
 }
 
