@@ -4,7 +4,7 @@
 
 /* Div that contains all the benefits cards */
 .benefits-row {
-  --gap: 80px;
+  --gap: 50px;
 
   -webkit-box-align: center;
 
