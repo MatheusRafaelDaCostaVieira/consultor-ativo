@@ -1,3 +1,8 @@
+#clients {
+  background-color: var(--bg-2);
+  padding-bottom: 50px;
+}
+
 .client-card-row {
   --gap: 50px;
   --justify-content: center;
@@ -20,7 +25,7 @@
 .client-card {
   --height: 250px;
   --max-width: 550px;
-  --shadow: none;
+  --shadow: var(--box-shadow);
   --width: 550px;
 
   -webkit-box-align: center;
@@ -28,7 +33,7 @@
   -ms-flex-align: center;
 
   align-items: center;
-  background-color: var(--bg-2);
+  background-color: var(--bg-3);
   border-radius: 10px;
   -webkit-box-shadow: var(--shadow);
   box-shadow: var(--shadow);
@@ -55,22 +60,22 @@
   -o-transition: var(--transition);
   transition: var(--transition);
   width: var(--width);
-}
 
-.client-card:hover {
-  --shadow: var(--box-shadow);
+  &:hover {
+    --shadow: none;
 
-  scale: 1.03;
+    scale: 0.98;
 
-  .client-image img {
-    -webkit-transform: rotate(5deg);
-    -ms-transform: rotate(5deg);
-    transform: rotate(5deg);
-    scale: 1.05;
-  }
+    .client-image img {
+      -webkit-transform: rotate(5deg);
+      -ms-transform: rotate(5deg);
+      transform: rotate(5deg);
+      scale: 1.05;
+    }
 
-  .client-h5 {
-    --color: var(--accent-text);
+    .client-h5 {
+      --color: var(--accent-text);
+    }
   }
 }
 

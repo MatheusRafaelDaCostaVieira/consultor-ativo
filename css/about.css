@@ -1,7 +1,5 @@
-#about {
-  --padding-top: 100px;
-
-  padding-top: var(--padding-top);
+#about .container {
+  padding-top: 80px;
 }
 
 /* About cards container */
@@ -21,7 +19,7 @@
 
 /* Div that builds the card and has the background image */
 .about-card {
-  --shadow: none;
+  --shadow: var(--box-shadow);
   --height: 225px;
   --max-width: 400px;
   --width: 100%;
@@ -41,6 +39,67 @@
   -o-transition: var(--transition);
   transition: var(--transition);
   width: var(--width);
+}
+
+/* When about card gets hovered*/
+.about-card:hover,
+.about-card-hover {
+  --shadow: none;
+
+  scale: 1.02;
+
+  .about-card-title {
+    opacity: 0;
+    visibility: 0;
+  }
+
+  .about-card-paragraph {
+    opacity: 1;
+    visibility: 1;
+  }
+}
+
+/* Makes the background image blured */
+.about-card-paragraph {
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+}
+
+/* Alings the text, sets the transition and size of the inner divs of the about cards */
+.about-card-title,
+.about-card-paragraph {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding: 15px 15px;
+  position: absolute;
+  text-align: center;
+  -webkit-transition: var(--transition);
+  -o-transition: var(--transition);
+  transition: var(--transition);
+  width: 100%;
+}
+
+/* About card title */
+.about-card .h5 {
+  color: var(--text-color-1);
+}
+
+/* About card paragraph */
+.about-card .p {
+  color: var(--text-color-2);
+}
+
+.about-card-paragraph {
+  opacity: 0;
+  visibility: 0;
 }
 
 .about-card-1 {
@@ -131,67 +190,6 @@
     url("../images/about/about_image_6.webp");
   background-image: linear-gradient(var(--gradient-70), var(--gradient-70)),
     url("../images/about/about_image_6.webp");
-}
-
-/* When about card gets hovered*/
-.about-card:hover,
-.about-card-hover {
-  --shadow: var(--box-shadow);
-
-  scale: 1.03;
-
-  .about-card-title {
-    opacity: 0;
-    visibility: 0;
-  }
-
-  .about-card-paragraph {
-    opacity: 1;
-    visibility: 1;
-  }
-}
-
-/* Makes the background image blured */
-.about-card-paragraph {
-  -webkit-backdrop-filter: blur(10px);
-  backdrop-filter: blur(10px);
-}
-
-/* Alings the text, sets the transition and size of the inner divs of the about cards */
-.about-card-title,
-.about-card-paragraph {
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  padding: 15px 15px;
-  position: absolute;
-  text-align: center;
-  -webkit-transition: var(--transition);
-  -o-transition: var(--transition);
-  transition: var(--transition);
-  width: 100%;
-}
-
-/* About card title */
-.about-card .h5 {
-  color: var(--text-color-1);
-}
-
-/* About card paragraph */
-.about-card .p {
-  color: var(--text-color-2);
-}
-
-.about-card-paragraph {
-  opacity: 0;
-  visibility: 0;
 }
 
 /* Devices above or equal to 680px wide */

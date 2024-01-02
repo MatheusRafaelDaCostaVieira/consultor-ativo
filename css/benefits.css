@@ -1,3 +1,7 @@
+#benefits {
+  background-color: var(--bg-2);
+}
+
 /* Div that contains all the benefits cards */
 .benefits-row {
   --gap: 80px;

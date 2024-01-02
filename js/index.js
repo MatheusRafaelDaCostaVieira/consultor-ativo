@@ -113,7 +113,7 @@ function scrollAnimation() {
   for (let i = 0; i < scrollAnimationElement.length; i++) {
     let windowHeight = window.innerHeight;
     let elementTop = scrollAnimationElement[i].getBoundingClientRect().top;
-    let elementVisible = 150;
+    let elementVisible = 100;
 
     if (elementTop < windowHeight - elementVisible) {
       scrollAnimationElement[i].classList.add("active");
