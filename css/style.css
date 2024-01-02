@@ -83,6 +83,7 @@
 /* Smooth scroll */
 html {
   scroll-behavior: smooth;
+  scrollbar-width: none;
 }
 
 /* Aling body items to center */
@@ -106,11 +107,6 @@ body {
 .block-scroll {
   height: 100%;
   overflow: hidden;
-}
-
-/* Scrollbar width */
-::-webkit-scrollbar {
-  width: 0px;
 }
 
 /* Class that hides elements before load */
