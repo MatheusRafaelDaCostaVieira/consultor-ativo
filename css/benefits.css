@@ -76,7 +76,7 @@
 
 /* Max width for the text grow */
 .benefit-text {
-  max-width: 700px;
+  max-width: 750px;
 }
 
 /* Margin under h3 */
@@ -98,14 +98,14 @@
 /* Devices above 900px wide */
 @media (min-width: 901px) {
   .benefits-row {
-    --gap: 50px;
+    --gap: 0px;
   }
 
   /* Make card content sit alongside others */
   .benefits-card {
     --flex-direction: row;
     --text-aling: left;
-    --width: 80vw;
+    --width: 85vw;
   }
 
   /* Invert image position of even cards */
@@ -130,11 +130,10 @@
   }
 }
 
-/* Devices above 1200px wide */
-@media (min-width: 1201px) {
+@media (min-width: 1400px) {
   /* Changing image size */
   .benefit-image {
-    --height: 350px;
-    --width: 350px;
+    --height: 325px;
+    --width: 325px;
   }
 }

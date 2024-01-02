@@ -103,6 +103,8 @@
 }
 
 .about-card-1 {
+  background-image: -o-linear-gradient(var(--gradient-70), var(--gradient-70)),
+    url("../images/about/about_image_1.webp");
   background-image: -webkit-gradient(
       linear,
       left top,
@@ -110,14 +112,14 @@
       from(var(--gradient-70)),
       to(var(--gradient-70))
     ),
-    url("../images/about/about_image_1.webp");
-  background-image: -o-linear-gradient(var(--gradient-70), var(--gradient-70)),
     url("../images/about/about_image_1.webp");
   background-image: linear-gradient(var(--gradient-70), var(--gradient-70)),
     url("../images/about/about_image_1.webp");
 }
 
 .about-card-2 {
+  background-image: -o-linear-gradient(var(--gradient-70), var(--gradient-70)),
+    url("../images/about/about_image_2.webp");
   background-image: -webkit-gradient(
       linear,
       left top,
@@ -125,14 +127,14 @@
       from(var(--gradient-70)),
       to(var(--gradient-70))
     ),
-    url("../images/about/about_image_2.webp");
-  background-image: -o-linear-gradient(var(--gradient-70), var(--gradient-70)),
     url("../images/about/about_image_2.webp");
   background-image: linear-gradient(var(--gradient-70), var(--gradient-70)),
     url("../images/about/about_image_2.webp");
 }
 
 .about-card-3 {
+  background-image: -o-linear-gradient(var(--gradient-70), var(--gradient-70)),
+    url("../images/about/about_image_3.webp");
   background-image: -webkit-gradient(
       linear,
       left top,
@@ -140,14 +142,14 @@
       from(var(--gradient-70)),
       to(var(--gradient-70))
     ),
-    url("../images/about/about_image_3.webp");
-  background-image: -o-linear-gradient(var(--gradient-70), var(--gradient-70)),
     url("../images/about/about_image_3.webp");
   background-image: linear-gradient(var(--gradient-70), var(--gradient-70)),
     url("../images/about/about_image_3.webp");
 }
 
 .about-card-4 {
+  background-image: -o-linear-gradient(var(--gradient-70), var(--gradient-70)),
+    url("../images/about/about_image_4.webp");
   background-image: -webkit-gradient(
       linear,
       left top,
@@ -155,14 +157,14 @@
       from(var(--gradient-70)),
       to(var(--gradient-70))
     ),
-    url("../images/about/about_image_4.webp");
-  background-image: -o-linear-gradient(var(--gradient-70), var(--gradient-70)),
     url("../images/about/about_image_4.webp");
   background-image: linear-gradient(var(--gradient-70), var(--gradient-70)),
     url("../images/about/about_image_4.webp");
 }
 
 .about-card-5 {
+  background-image: -o-linear-gradient(var(--gradient-70), var(--gradient-70)),
+    url("../images/about/about_image_5.webp");
   background-image: -webkit-gradient(
       linear,
       left top,
@@ -170,14 +172,14 @@
       from(var(--gradient-70)),
       to(var(--gradient-70))
     ),
-    url("../images/about/about_image_5.webp");
-  background-image: -o-linear-gradient(var(--gradient-70), var(--gradient-70)),
     url("../images/about/about_image_5.webp");
   background-image: linear-gradient(var(--gradient-70), var(--gradient-70)),
     url("../images/about/about_image_5.webp");
 }
 
 .about-card-6 {
+  background-image: -o-linear-gradient(var(--gradient-70), var(--gradient-70)),
+    url("../images/about/about_image_6.webp");
   background-image: -webkit-gradient(
       linear,
       left top,
@@ -185,8 +187,6 @@
       from(var(--gradient-70)),
       to(var(--gradient-70))
     ),
-    url("../images/about/about_image_6.webp");
-  background-image: -o-linear-gradient(var(--gradient-70), var(--gradient-70)),
     url("../images/about/about_image_6.webp");
   background-image: linear-gradient(var(--gradient-70), var(--gradient-70)),
     url("../images/about/about_image_6.webp");

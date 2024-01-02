@@ -14,7 +14,7 @@
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  padding: 50px 10px;
+  padding: 30px 10px;
   text-align: center;
   width: 100%;
 }
@@ -53,11 +53,8 @@
 
 .footer-p {
   color: var(--text-color-2);
+  font-size: 14px;
   -webkit-transition: var(--transition);
   -o-transition: var(--transition);
   transition: var(--transition);
-}
-
-.footer-p:hover {
-  scale: 1.02;
 }

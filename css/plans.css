@@ -1,6 +1,7 @@
 .plans-row {
   --gap: 30px;
   --justify-content: center;
+  --max-width: 1000px;
 
   justify-content: var(--justify-content);
   display: -webkit-box;
@@ -8,7 +9,7 @@
   display: flex;
   flex-wrap: wrap;
   gap: var(--gap);
-  max-width: 1200px;
+  max-width: var(--max-width);
   width: 100%;
 
   -ms-flex-wrap: wrap;
@@ -195,16 +196,23 @@
   }
 }
 
-/* Devices over 869px wide */
+/* Devices over 681px wide */
 @media (min-width: 681px) {
   .plan-card {
     --max-width: 320px;
   }
 }
 
-/* Devices over 1000px wide */
+/* Devices over 1010px wide */
 @media (min-width: 1010px) {
   .plans-row {
     --justify-content: space-between;
+  }
+}
+
+/* Devices over 1300px wide */
+@media (min-width: 1300px) {
+  .plans-row {
+    --max-width: 1200px;
   }
 }

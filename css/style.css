@@ -131,6 +131,8 @@ body {
 .scroll-animation {
   opacity: 0;
   transition: var(--transition);
+  -webkit-transform: translateY(100px);
+  -ms-transform: translateY(100px);
   transform: translateY(100px);
 
   -webkit-transition: var(--transition);
@@ -228,8 +230,14 @@ body {
 
 /* Class that goes to most of the important divs/section */
 .section {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
   width: 100vw;
 }

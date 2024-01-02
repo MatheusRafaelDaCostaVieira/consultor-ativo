@@ -32,6 +32,8 @@ body {
   --display: none;
 
   align-items: center;
+  background-image: -o-linear-gradient(var(--gradient-75), var(--gradient-75)),
+    url(../images/backgrounds/sing-up_background.webp);
   background-image: -webkit-gradient(
       linear,
       left top,
@@ -39,8 +41,6 @@ body {
       from(var(--gradient-75)),
       to(var(--gradient-75))
     ),
-    url(../images/backgrounds/sing-up_background.webp);
-  background-image: -o-linear-gradient(var(--gradient-75), var(--gradient-75)),
     url(../images/backgrounds/sing-up_background.webp);
   background-image: linear-gradient(var(--gradient-75), var(--gradient-75)),
     url(../images/backgrounds/sing-up_background.webp);
