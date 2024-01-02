@@ -48,7 +48,7 @@
 
   --plan-card-white-border: rgba(232, 232, 232, 0.3);
 
-  --transition: 150ms ease-in;
+  --transition: 200ms ease-in-out;
 
   /* Dark mode */
   @media (prefers-color-scheme: dark) {
@@ -343,13 +343,12 @@ body {
 
 /* Form default styles */
 .form {
-  --padding: ;
   --width: 300px;
 
-  padding: var(--padding);
   min-width: 200px;
   width: var(--width);
 }
+
 /* Ul that contains the items */
 .form-ul {
   list-style: none;
@@ -366,9 +365,7 @@ body {
 
 /* Paragraph under the form */
 .form-p {
-  bottom: 0;
   color: var(--text-color-4);
-  position: absolute;
   margin-bottom: 15px;
   text-align: center;
 
