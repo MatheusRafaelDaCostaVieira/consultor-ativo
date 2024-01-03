@@ -50,6 +50,8 @@ $(document).ready(function () {
     }
   });
 
+  $(".close-pop-up-icon").on("click", togglePopUp);
+
   /* Detects the user theme to change icons color */
   window
     .matchMedia("(prefers-color-scheme: dark)")
@@ -85,12 +87,14 @@ function changeIconsColor() {
       "src",
       "./images/icons/light-plan-btn.svg"
     );
+    $(".close-pop-up-icon").attr("src", "../images/icons/close-light.svg");
   } else {
     $(".plan-p .responsive-icon").attr("src", "./images/icons/dark-check.svg");
     $(".plan-button-responsive-icon img").attr(
       "src",
       "./images/icons/dark-plan-btn.svg"
     );
+    $(".close-pop-up-icon").attr("src", "../images/icons/close-dark.svg");
   }
 }
 
@@ -142,4 +146,14 @@ function closeMenu() {
   $("body").removeClass("block-scroll");
   $("#menu").removeClass("active-menu");
   $(".navbar").removeClass("active-menu-navbar");
+}
+
+/* Makes the pop up appear when user sings up */
+function togglePopUp() {
+  let popUpWindow = $(".sing-up-pop-up");
+  if (popUpWindow.hasClass("active")) {
+    popUpWindow.removeClass("active");
+  } else {
+    popUpWindow.addClass("active");
+  }
 }
