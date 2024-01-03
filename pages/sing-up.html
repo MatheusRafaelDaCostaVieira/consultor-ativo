@@ -17,6 +17,22 @@
 
   <body>
     <section id="sing-up">
+      <div class="sing-up-pop-up">
+        <div class="close-pop-up">
+          <img
+            src="../images/icons/close-dark.svg"
+            alt="Cancelar cadastramento."
+            class="close-pop-up-icon"
+          />
+        </div>
+        <div class="pop-up-div">
+          <p class="p">
+            Ao se cadastrar, você está aceitando nossas
+            <a href="./sing-up.html">políticas de privacidade</a>.
+          </p>
+          <a href="./sing-up.html" class="button">Aceitar termos</a>
+        </div>
+      </div>
       <div class="sing-up-left">
         <h2 class="h1 hide-before-load">Consutor <span>ativo</span></h2>
         <p class="p sing-up-p hide-before-load">
@@ -72,7 +88,9 @@
                 <option value="prata">Plano Prata</option>
                 <option value="gold">Plano Ouro</option>
               </select>
-              <button type="submit" class="button">Cadastrar</button>
+              <button id="sing-up-btn" type="submit" class="button">
+                Cadastrar
+              </button>
             </li>
           </ul>
         </form>
