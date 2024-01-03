@@ -40,6 +40,7 @@
   --gradient-80: rgba(245, 245, 247, 0.8);
   --gradient-75: rgba(22, 22, 22, 0.75);
   --gradient-70: rgba(22, 22, 22, 0.7);
+  --gradient-10: rgba(245, 245, 247, 0.1);
 
   --active-navbar-text: #1e1e1e;
 
@@ -63,6 +64,7 @@
     --box-shadow-color: rgba(232, 232, 232, 0.3);
 
     --gradient-80: rgba(22, 22, 22, 0.8);
+    --gradient-10: rgba(22, 22, 22, 0.1);
 
     --active-navbar-text: #e8e8e8;
 
@@ -222,6 +224,11 @@ body {
   font-style: light;
   font-weight: 400;
   line-height: normal;
+
+  a {
+    color: var(--accent-text);
+    text-decoration: none;
+  }
 }
 
 /* Class that goes to most of the important divs/section */
