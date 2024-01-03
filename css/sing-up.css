@@ -22,7 +22,98 @@ body {
   -ms-grid-columns: var(--grid-template-columns);
   grid-template-columns: var(--grid-template-columns);
   height: 100%;
+  position: relative;
   width: 100%;
+}
+
+/* Close pop up btn container */
+.close-pop-up {
+  --padding: 15px;
+
+  left: 0;
+  padding-right: var(--padding);
+  padding-top: var(--padding);
+  position: absolute;
+  text-align: right;
+  top: 0;
+  width: 100vw;
+
+  .close-pop-up-icon {
+    height: 20px;
+    width: 20px;
+  }
+}
+
+/* Div that blurs everything behind it */
+.sing-up-pop-up {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(15px);
+  background-color: var(--gradient-10);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  left: 0;
+  opacity: 0;
+  padding: 0 10px;
+  position: absolute;
+  top: 0;
+  -webkit-transition: var(--transition);
+  -o-transition: var(--transition);
+  transition: var(--transition);
+  visibility: 0;
+  width: 100%;
+  z-index: -1;
+
+  &.active {
+    opacity: 1;
+    visibility: 1;
+    z-index: 1;
+  }
+}
+
+/* The pop up div that contains the content */
+.pop-up-div {
+  --gap: 30px;
+  --height: 210px;
+  --padding: 0 5px;
+  --width: 100%;
+
+  -webkit-box-align: center;
+
+  -ms-flex-align: center;
+
+  align-items: center;
+  background-color: var(--bg-1);
+  border-radius: 5px;
+  -webkit-box-shadow: var(--box-shadow);
+  box-shadow: var(--box-shadow);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  gap: var(--gap);
+  height: var(--height);
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  min-width: 250px;
+  text-align: center;
+  padding: var(--padding);
+  width: var(--width);
+
+  .p {
+    color: var(--text-color-4);
+  }
 }
 
 .sing-up-left {
@@ -73,6 +164,9 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
   gap: var(--gap);
   height: 100%;
@@ -122,6 +216,17 @@ body {
   row-gap: 40px;
 }
 
+/* Devices over 355px wide */
+@media (min-width: 355px) {
+  .close-pop-up {
+    --padding: 30px;
+  }
+
+  .pop-up-div {
+    --width: 325px;
+  }
+}
+
 /* Devices under 375px wide */
 @media (max-width: 375px) {
   .sing-up-right {
@@ -129,11 +234,19 @@ body {
   }
 }
 
-/* Devices above 800px wide */
-@media (min-height: 800px) {
-  /* Increases the spacement between the form items */
-  .sing-up-right {
-    --gap: 80px;
+/* Devices over 435px wide */
+@media (min-width: 435px) {
+  .pop-up-div {
+    --padding: 0 30px;
+    --width: 380px;
+  }
+}
+
+/* Devices over 550px wide */
+@media (min-width: 550px) {
+  .pop-up-div {
+    --height: 268px;
+    --width: 466px;
   }
 }
 
@@ -148,6 +261,14 @@ body {
     -ms-flex-pack: justify;
 
     justify-content: space-between;
+  }
+}
+
+/* Devices above 800px wide */
+@media (min-height: 800px) {
+  /* Increases the spacement between the form items */
+  .sing-up-right {
+    --gap: 80px;
   }
 }
 
