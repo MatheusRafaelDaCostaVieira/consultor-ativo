@@ -73,6 +73,10 @@
   }
 }
 
+::-webkit-scrollbar {
+  width: 0;
+}
+
 /* Formating elements */
 * {
   box-sizing: border-box;
@@ -221,8 +225,8 @@ body {
 .p {
   font-family: var(--font-family);
   font-size: 16px;
-  font-style: light;
-  font-weight: 400;
+  font-style: normal;
+  font-weight: 300;
   line-height: normal;
 
   a {

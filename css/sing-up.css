@@ -95,7 +95,7 @@ body {
   -ms-flex-align: center;
 
   align-items: center;
-  background-color: var(--bg-1);
+  background-color: var(--bg-2);
   border-radius: 5px;
   -webkit-box-shadow: var(--box-shadow);
   box-shadow: var(--box-shadow);
@@ -112,9 +112,12 @@ body {
   -ms-flex-pack: center;
   justify-content: center;
   min-width: 250px;
-  text-align: center;
-  transition: var(--transition);
   padding: var(--padding);
+  text-align: center;
+  -webkit-transition: var(--transition);
+  -o-transition: var(--transition);
+  transition: var(--transition);
+  scrollbar-width: auto;
   width: var(--width);
 
   &.expanded {
@@ -150,6 +153,8 @@ body {
   padding: 5px;
   text-align: left;
   visibility: 0;
+  -webkit-transition: var(--transition);
+  -o-transition: var(--transition);
   transition: var(--transition);
   width: 100%;
 
@@ -157,6 +162,10 @@ body {
     display: block;
     opacity: 1;
     visibility: 1;
+  }
+
+  .p {
+    color: var(--text-color-4);
   }
 }
 
