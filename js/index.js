@@ -1,3 +1,7 @@
+let popUpDiv = $(".pop-up-div");
+let popUpP = $(".pop-up-p");
+let termsOfService = $(".terms-of-service");
+
 $(document).ready(function () {
   /* And when the menu link get clicked */
   $(".menu-links .navigation-link").on("click", function () {
@@ -49,8 +53,6 @@ $(document).ready(function () {
       }
     }
   });
-
-  $(".close-pop-up-icon").on("click", togglePopUp);
 
   /* Detects the user theme to change icons color */
   window
@@ -156,4 +158,27 @@ function togglePopUp() {
   } else {
     popUpWindow.addClass("active");
   }
+}
+
+/* Display the terms of service */
+function openTermsOfService() {
+  /*   let popUpHeight = popUpDiv.css("height");
+  popUpHeight = Number(popUpHeight.substring(0, popUpHeight.length - 2));
+  popUpHeight = popUpHeight + 120 + "px"; */
+
+  popUpDiv.css("--expanded-height", "calc(100% - 160px)");
+  popUpDiv.css("--expanded-width", "100%");
+
+  popUpDiv.addClass("expanded");
+  termsOfService.addClass("active");
+  popUpP.removeClass("active");
+}
+
+/* Hides the terms of service */
+function closeTermsOfService() {
+  setTimeout(() => {
+    popUpDiv.removeClass("expanded");
+    termsOfService.removeClass("active");
+    popUpP.addClass("active");
+  }, 300);
 }

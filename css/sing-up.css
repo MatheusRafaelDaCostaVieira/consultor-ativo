@@ -26,26 +26,10 @@ body {
   width: 100%;
 }
 
-/* Close pop up btn container */
-.close-pop-up {
-  --padding: 15px;
-
-  left: 0;
-  padding-right: var(--padding);
-  padding-top: var(--padding);
-  position: absolute;
-  text-align: right;
-  top: 0;
-  width: 100vw;
-
-  .close-pop-up-icon {
-    height: 20px;
-    width: 20px;
-  }
-}
-
 /* Div that blurs everything behind it */
 .sing-up-pop-up {
+  --padding: 0 15px;
+
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
@@ -61,7 +45,7 @@ body {
   justify-content: center;
   left: 0;
   opacity: 0;
-  padding: 0 10px;
+  padding: var(--padding);
   position: absolute;
   top: 0;
   -webkit-transition: var(--transition);
@@ -78,10 +62,31 @@ body {
   }
 }
 
+/* Close pop up btn container */
+.close-pop-up {
+  --padding: 15px;
+
+  left: 0;
+  padding-right: var(--padding);
+  padding-top: var(--padding);
+  position: absolute;
+  text-align: right;
+  top: 0;
+  width: 100vw;
+
+  .close-pop-up-icon {
+    height: 20px;
+    cursor: pointer;
+    width: 20px;
+  }
+}
+
 /* The pop up div that contains the content */
 .pop-up-div {
   --gap: 30px;
   --height: 210px;
+  --expanded-height: ;
+  --expanded-width: ;
   --padding: 0 5px;
   --width: 100%;
 
@@ -108,11 +113,50 @@ body {
   justify-content: center;
   min-width: 250px;
   text-align: center;
+  transition: var(--transition);
   padding: var(--padding);
   width: var(--width);
 
-  .p {
+  &.expanded {
+    --padding: 30px 5px;
+
+    width: var(--expanded-width);
+    height: var(--expanded-height);
+  }
+
+  .pop-up-p {
     color: var(--text-color-4);
+    display: none;
+
+    &.active {
+      display: block;
+    }
+
+    .terms-of-service-link {
+      color: var(--accent-text);
+      cursor: pointer;
+    }
+  }
+}
+
+/* Divs that displays our terms of service */
+.terms-of-service {
+  border: 1px solid var(--border);
+  border-radius: 5px;
+  display: none;
+  height: 100%;
+  opacity: 0;
+  overflow-y: scroll;
+  padding: 5px;
+  text-align: left;
+  visibility: 0;
+  transition: var(--transition);
+  width: 100%;
+
+  &.active {
+    display: block;
+    opacity: 1;
+    visibility: 1;
   }
 }
 
@@ -218,6 +262,10 @@ body {
 
 /* Devices over 355px wide */
 @media (min-width: 355px) {
+  .sing-up-pop-up {
+    --padding: 0 30px;
+  }
+
   .close-pop-up {
     --padding: 30px;
   }
